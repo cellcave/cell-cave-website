@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Status Saver | Cell Cave</title>
+
+    <meta name="description" content="Status Saver by Cell Cave - save and manage your favorite status content with a simple experience.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #111827;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 11px;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+        }
+
+        .back-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: #ffffff;
+            padding: 90px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .app-icon-large {
+            width: 180px;
+            height: 180px;
+            border-radius: 40px;
+            background: #e5e7eb;
+            color: #4b5563;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 800;
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+        }
+
+        .hero h1 {
+            color: #111827;
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #6b7280;
+            font-size: 19px;
+            margin-bottom: 28px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 22px;
+            border-radius: 11px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .play-button {
+            background: #2563eb;
+            color: white;
+        }
+
+        .privacy-button {
+            background: #ffffff;
+            color: #2563eb;
+            border: 1px solid #d1d5db;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* CONTENT */
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            color: #111827;
+            font-size: 34px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .description {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #6b7280;
+            font-size: 18px;
+        }
+
+        /* FEATURES */
+
+        .features {
+            background: #ffffff;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .feature-card {
+            padding: 25px;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #f8fafc;
+        }
+
+        .feature-card h3 {
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+        }
+
+        /* PRIVACY NOTE */
+
+        .privacy-note {
+            max-width: 800px;
+            margin: auto;
+            padding: 28px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .privacy-note h2 {
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .privacy-note p {
+            color: #6b7280;
+            margin-bottom: 18px;
+        }
+
+        .privacy-note a {
+            color: #2563eb;
+            font-weight: 700;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111827;
+            color: #9ca3af;
+            padding: 35px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .nav-container {
+                padding: 16px 0;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .app-icon-large {
+                width: 140px;
+                height: 140px;
+                margin: auto;
+                border-radius: 32px;
+                font-size: 38px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="container nav-container">
+
+            <a href="../../" class="logo">
+                <span class="logo-icon">CC</span>
+                Cell Cave
+            </a>
+
+            <a href="../" class="back-link">
+                ← All Apps
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- APP HERO -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="app-icon-large">
+                    SS
+                </div>
+
+                <div>
+
+                    <h1>Status Saver</h1>
+
+                    <p>
+                        Save and manage your favorite status content
+                        with a simple, convenient and user-friendly
+                        experience.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
+                            class="button play-button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Google Play
+                        </a>
+
+                        <a
+                            href="../../privacy/"
+                            class="button privacy-button"
+                        >
+                            Privacy Policy
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT APP -->
+
+        <section>
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    About Status Saver
+                </h2>
+
+                <p class="description">
+                    Status Saver is a utility application designed to
+                    provide a simple way to save and manage status content
+                    available on your device. The app focuses on keeping
+                    the experience straightforward and easy to use.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Features
+                </h2>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <h3>Easy to Use</h3>
+
+                        <p>
+                            A simple interface designed for a smooth
+                            everyday experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>Quick Access</h3>
+
+                        <p>
+                            Easily access supported status content
+                            from within the application.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>Simple Management</h3>
+
+                        <p>
+                            Manage saved content through a clean and
+                            straightforward interface.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRIVACY -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="privacy-note">
+
+                    <h2>
+                        Your Privacy Matters
+                    </h2>
+
+                    <p>
+                        Learn how Status Saver may collect, use and
+                        process information and how third-party services
+                        may be involved.
+                    </p>
+
+                    <a href="../../privacy/">
+                        Read Privacy Policy →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div>
+                <strong>Cell Cave</strong>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="../../">Home</a>
+
+                <a href="../">Apps</a>
+
+                <a href="../../support/">Support</a>
+
+                <a href="../../about/">About</a>
+
+                <a href="../../privacy/">Privacy Policy</a>
+
+                <a href="../../terms/">Terms of Use</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
