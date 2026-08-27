@@ -748,9 +748,16 @@
 }
 
 .platform-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 18px;
+    width: 100%;
+}
+
+.platform-card {
+    flex: 1;
+    min-width: 0;
+}
 }
 
 .platform-card {
@@ -843,7 +850,7 @@
 @media (max-width: 650px) {
 
     .platform-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
 }
@@ -1401,7 +1408,7 @@
             <!-- GOOGLE PLAY -->
 
             <a
-                href="https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
+                href="https://play.google.com/store/apps/developer?id=Cell+Cave"
                 class="platform-card"
                 target="_blank"
                 rel="noopener"
