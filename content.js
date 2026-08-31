@@ -36,7 +36,7 @@ const siteContent = {
                 description:
                     "A practical mobile app for saving and managing supported status content.",
 
-                link: "apps/status-saver/",
+                link: "apps/status-downloader-video-saver/",
 
                 googlePlayLink:
                     "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
@@ -142,7 +142,7 @@ const siteContent = {
 
         button: "View App",
 
-        link: "apps/status-saver/",
+        link: "apps/status-downloader-video-saver/",
 
         googlePlayLink:
             "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
