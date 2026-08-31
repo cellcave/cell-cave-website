@@ -20,11 +20,11 @@ const siteContent = {
     },
 
     about: {
-        title: "Built Around Everyday Utility",
+        title: "Practical Apps for Everyday Needs",
 
         description:
-            "At Cell Cave, we focus on creating straightforward mobile applications that solve common digital tasks. Our approach is simple: understand the need, remove unnecessary complexity, and create an experience that is easy to use."
-    },
+    "Cell Cave focuses on practical utility applications designed to make everyday digital tasks simpler, more convenient, and easier to manage.",
+    }
 
     apps: {
         title: "Explore Our Apps",
