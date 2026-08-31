@@ -49,7 +49,7 @@ const siteContent = {
                 description:
                     "A practical document reader designed to help users open and read supported document formats.",
 
-                link: "apps/file-reader/",
+                link: "apps/document-reader-read-all-pdf/",
 
                 googlePlayLink:
                     "https://play.google.com/store/apps/details?id=com.officedocument.word.docx.document.viewer.pdf"
