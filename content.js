@@ -23,8 +23,8 @@ const siteContent = {
         title: "Practical Apps for Everyday Needs",
 
         description:
-    "Cell Cave focuses on practical utility applications designed to make everyday digital tasks simpler, more convenient, and easier to manage.",
-    }
+            "Cell Cave focuses on practical utility applications designed to make everyday digital tasks simpler, more convenient, and easier to manage."
+    },
 
     apps: {
         title: "Explore Our Apps",
@@ -33,45 +33,57 @@ const siteContent = {
             "Discover our growing collection of utility applications built to help with everyday digital tasks.",
 
         items: [
+
             {
                 name: "Status Saver",
                 shortName: "SS",
+
                 description:
                     "Save and manage supported status content through a simple and convenient experience.",
+
                 link: "apps/status-saver/"
             },
 
             {
                 name: "File Reader",
                 shortName: "FR",
+
                 description:
                     "Open and view supported files through a clean and straightforward interface.",
+
                 link: "apps/file-reader/"
             },
 
             {
                 name: "Age Calculator",
                 shortName: "AC",
+
                 description:
                     "Calculate age and explore useful date information quickly and easily.",
+
                 link: "apps/age-calculator/"
             },
 
             {
                 name: "All Video Downloader",
                 shortName: "VD",
+
                 description:
                     "A utility app designed to help manage and download videos from supported sources.",
+
                 link: "apps/all-video-downloader/"
             },
 
             {
                 name: "Cloud Backup",
                 shortName: "CB",
+
                 description:
                     "A convenient utility for backing up and organizing important files and data.",
+
                 link: "apps/cloud-backup/"
             }
+
         ]
     },
 
@@ -82,29 +94,35 @@ const siteContent = {
             "We aim to keep our apps useful without making them unnecessarily complicated.",
 
         points: [
+
             {
                 title: "Simple",
+
                 description:
                     "Straightforward experiences that are easy to understand."
             },
 
             {
                 title: "Practical",
+
                 description:
                     "Apps focused on real everyday utility and common digital needs."
             },
 
             {
                 title: "User Focused",
+
                 description:
                     "Clean interfaces designed around a smooth user experience."
             },
 
             {
                 title: "Always Improving",
+
                 description:
                     "We continue refining our apps based on usability and product needs."
             }
+
         ]
     },
 
@@ -144,8 +162,8 @@ const siteContent = {
     },
 
     footer: {
-    copyright: "© 2026 Cell Cave. All rights reserved.",
-    email: "cellcave70@gmail.com"
-}
+        copyright: "© 2026 Cell Cave. All rights reserved.",
+        email: "cellcave70@gmail.com"
+    }
 
 };
