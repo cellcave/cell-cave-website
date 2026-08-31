@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Status Saver | Cell Cave</title>
+    <title>Status Downloader: Video Saver | Cell Cave</title>
 
     <meta
         name="description"
-        content="Status Saver by Cell Cave. A practical mobile utility app for supported status content."
+        content="Status Downloader: Video Saver by Cell Cave. A practical mobile app for saving and managing supported status content."
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,7 +96,6 @@
             background: var(--dark);
             color: white;
             font-size: 11px;
-            letter-spacing: 0.5px;
         }
 
         .nav-links {
@@ -163,7 +162,7 @@
 
         .hero-content h1 {
             font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(48px, 6vw, 70px);
+            font-size: clamp(46px, 6vw, 70px);
             line-height: 1.04;
             letter-spacing: -2.5px;
             margin-bottom: 20px;
@@ -201,6 +200,16 @@
         }
 
         .button-primary:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        .button-ios {
+            background: var(--accent);
+            color: white;
+        }
+
+        .button-ios:hover {
             background: var(--accent-dark);
             transform: translateY(-2px);
         }
@@ -308,14 +317,6 @@
             border-radius: 11px;
             background: #1d201c;
             color: #b9beb7;
-            transition: 0.2s ease;
-            cursor: default;
-        }
-
-        .social-icon:hover {
-            color: white;
-            border-color: #4f564d;
-            transform: translateY(-2px);
         }
 
         .social-icon svg {
@@ -347,12 +348,10 @@
         .footer-links a {
             color: #aeb3ac;
             font-size: 13px;
-            transition: 0.2s ease;
         }
 
         .footer-links a:hover {
             color: white;
-            transform: translateX(2px);
         }
 
         .footer-bottom {
@@ -361,6 +360,8 @@
             color: #858b83;
             font-size: 12px;
         }
+
+        /* RESPONSIVE */
 
         @media (max-width: 900px) {
             .hero-grid {
@@ -379,10 +380,6 @@
         }
 
         @media (max-width: 650px) {
-            .container {
-                width: min(92%,1160px);
-            }
-
             .nav-inner {
                 height: auto;
                 padding: 15px 0;
@@ -415,13 +412,8 @@
                 grid-column: auto;
             }
 
-            footer {
-                padding-top: 50px;
-            }
-
             .footer-links {
-                grid-template-columns: repeat(2,1fr);
-                gap: 14px 20px;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -436,6 +428,7 @@
 <body>
 
 <header class="navbar">
+
     <div class="container nav-inner">
 
         <a href="../../" class="brand">
@@ -451,7 +444,9 @@
         </ul>
 
     </div>
+
 </header>
+
 
 <main>
 
@@ -476,13 +471,13 @@
                     </div>
 
                     <h1>
-                        Status Saver
+                        Status Downloader: Video Saver
                     </h1>
 
                     <p>
-                        Status Saver provides a simple way to save and
-                        manage supported status content through a
-                        straightforward mobile experience.
+                        Status Downloader: Video Saver is a practical
+                        mobile app designed to help save and manage
+                        supported status content.
                     </p>
 
                     <div class="buttons">
@@ -494,6 +489,13 @@
                             class="button button-primary"
                         >
                             Get on Google Play
+                        </a>
+
+                        <a
+                            href="../../app-store/"
+                            class="button button-ios"
+                        >
+                            Get on iOS
                         </a>
 
                         <a
@@ -521,14 +523,14 @@
             <article class="detail-card large">
 
                 <h2>
-                    About Status Saver
+                    About Status Downloader: Video Saver
                 </h2>
 
                 <p>
-                    Status Saver is part of the Cell Cave collection
-                    of practical mobile apps. Detailed app information
-                    and final content can be updated as the website
-                    content is finalized.
+                    Status Downloader: Video Saver is part of the
+                    Cell Cave collection of practical mobile apps.
+                    Additional app information can be added as the
+                    website content is finalized.
                 </p>
 
             </article>
@@ -537,13 +539,12 @@
             <article class="detail-card">
 
                 <h2>
-                    App Details
+                    Google Play
                 </h2>
 
                 <p>
-                    More detailed information about Status Saver
-                    features will be added as part of the final
-                    content update.
+                    Status Downloader: Video Saver is available
+                    through Google Play.
                 </p>
 
             </article>
@@ -552,12 +553,12 @@
             <article class="detail-card">
 
                 <h2>
-                    Availability
+                    iOS
                 </h2>
 
                 <p>
-                    Status Saver is currently available through
-                    Google Play for supported Android devices.
+                    iOS availability is coming soon. The iOS button
+                    currently opens the Cell Cave App Store page.
                 </p>
 
             </article>
@@ -577,14 +578,11 @@
 
             <div class="footer-brand">
 
-                <h3>
-                    Cell Cave
-                </h3>
+                <h3>Cell Cave</h3>
 
                 <p>
                     Simple Utilities. Smarter Everyday.
                 </p>
-
 
                 <div class="footer-social">
 
@@ -635,17 +633,11 @@
             <nav class="footer-links">
 
                 <a href="../../">Home</a>
-
                 <a href="../">Apps</a>
-
                 <a href="../../support/">Support</a>
-
                 <a href="../../about/">About</a>
-
                 <a href="../../privacy/">Privacy Policy</a>
-
                 <a href="../../terms/">Terms of Use</a>
-
                 <a href="../../app-store/">App Store</a>
 
                 <a
