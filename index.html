@@ -76,6 +76,7 @@
 
             background: rgba(246, 247, 244, 0.88);
             backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
 
             border-bottom: 1px solid rgba(227, 230, 223, 0.8);
         }
@@ -124,6 +125,7 @@
 
         .nav-links a {
             color: var(--muted);
+
             font-size: 14px;
             font-weight: 600;
 
@@ -141,19 +143,23 @@
 
         .hero {
             padding: 110px 0 100px;
+
             overflow: hidden;
         }
 
         .hero-grid {
             display: grid;
             grid-template-columns: 1.15fr 0.85fr;
+
             align-items: center;
+
             gap: 70px;
         }
 
         .eyebrow {
             display: inline-flex;
             align-items: center;
+
             gap: 8px;
 
             padding: 7px 12px;
@@ -178,6 +184,7 @@
             height: 7px;
 
             border-radius: 50%;
+
             background: var(--accent);
         }
 
@@ -185,6 +192,7 @@
             max-width: 760px;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: clamp(48px, 6vw, 76px);
             line-height: 1.02;
             letter-spacing: -3px;
@@ -200,6 +208,7 @@
             max-width: 650px;
 
             color: var(--muted);
+
             font-size: 18px;
             line-height: 1.8;
 
@@ -209,6 +218,7 @@
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
@@ -218,6 +228,7 @@
             justify-content: center;
 
             min-height: 48px;
+
             padding: 0 20px;
 
             border-radius: 12px;
@@ -235,21 +246,26 @@
 
         .button-primary:hover {
             transform: translateY(-2px);
+
             background: var(--accent-dark);
         }
 
         .button-secondary {
             background: white;
+
             border: 1px solid var(--line);
         }
 
         .button-secondary:hover {
             transform: translateY(-2px);
+
             border-color: #c7cdc3;
         }
 
 
-        /* HERO VISUAL */
+        /* =========================
+           HERO VISUAL
+        ========================= */
 
         .hero-visual {
             position: relative;
@@ -275,6 +291,7 @@
             content: "";
 
             position: absolute;
+
             inset: 45px;
 
             border: 1px dashed #dfe4dc;
@@ -283,6 +300,7 @@
 
         .visual-card {
             position: relative;
+
             z-index: 2;
 
             width: 285px;
@@ -295,7 +313,7 @@
             background: rgba(255,255,255,0.8);
 
             box-shadow:
-                0 25px 70px rgba(35, 45, 35, 0.12);
+                0 25px 70px rgba(35,45,35,0.12);
 
             backdrop-filter: blur(18px);
         }
@@ -310,8 +328,10 @@
 
         .visual-label {
             color: var(--muted);
+
             font-size: 12px;
             font-weight: 700;
+
             text-transform: uppercase;
             letter-spacing: 0.8px;
         }
@@ -334,6 +354,7 @@
 
         .visual-card h3 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 29px;
             line-height: 1.1;
 
@@ -342,11 +363,13 @@
 
         .visual-card p {
             color: var(--muted);
+
             font-size: 14px;
         }
 
         .visual-apps {
             display: flex;
+
             gap: 9px;
 
             margin-top: 26px;
@@ -380,6 +403,7 @@
         .intro-box {
             display: grid;
             grid-template-columns: 0.7fr 1.3fr;
+
             gap: 60px;
 
             padding: 65px;
@@ -392,8 +416,10 @@
 
         .section-kicker {
             color: #aebcaf;
+
             font-size: 12px;
             font-weight: 700;
+
             text-transform: uppercase;
             letter-spacing: 1px;
 
@@ -402,12 +428,14 @@
 
         .intro-box h2 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 40px;
             line-height: 1.1;
         }
 
         .intro-box p {
             color: #b8beb8;
+
             font-size: 17px;
             line-height: 1.8;
         }
@@ -423,11 +451,13 @@
 
         .section-heading {
             max-width: 700px;
+
             margin-bottom: 45px;
         }
 
         .section-heading h2 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: clamp(36px, 5vw, 52px);
             line-height: 1.1;
 
@@ -438,11 +468,13 @@
 
         .section-heading p {
             color: var(--muted);
+
             font-size: 17px;
         }
 
         .apps-track {
             display: flex;
+
             gap: 18px;
 
             overflow-x: auto;
@@ -450,6 +482,7 @@
             padding: 5px 3px 25px;
 
             scroll-snap-type: x mandatory;
+
             scrollbar-width: thin;
         }
 
@@ -465,8 +498,8 @@
             padding: 26px;
 
             background: white;
-            border: 1px solid var(--line);
 
+            border: 1px solid var(--line);
             border-radius: 22px;
 
             transition: 0.25s ease;
@@ -474,7 +507,9 @@
 
         .app-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 45px rgba(30, 40, 30, 0.09);
+
+            box-shadow:
+                0 20px 45px rgba(30,40,30,0.09);
         }
 
         .app-icon {
@@ -490,6 +525,7 @@
             color: var(--accent);
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 16px;
             font-weight: 700;
 
@@ -498,6 +534,7 @@
 
         .app-card h3 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 22px;
 
             margin-bottom: 10px;
@@ -505,6 +542,7 @@
 
         .app-card p {
             color: var(--muted);
+
             font-size: 14px;
             line-height: 1.7;
 
@@ -515,12 +553,14 @@
 
         .app-link {
             color: var(--accent);
+
             font-size: 14px;
             font-weight: 700;
         }
 
         .slider-controls {
             display: flex;
+
             gap: 9px;
 
             margin-top: 5px;
@@ -537,11 +577,12 @@
 
             cursor: pointer;
 
-            transition: 0.2s;
+            transition: 0.2s ease;
         }
 
         .slider-button:hover {
             transform: translateY(-2px);
+
             border-color: #bec5bb;
         }
 
@@ -552,31 +593,38 @@
 
         .why-section {
             padding: 105px 0;
+
             background: white;
         }
 
         .why-grid {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
+
             gap: 80px;
         }
 
         .why-intro h2 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 50px;
             line-height: 1.05;
+
             letter-spacing: -2px;
+
             margin-bottom: 20px;
         }
 
         .why-intro p {
             color: var(--muted);
+
             max-width: 430px;
         }
 
         .why-items {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2,1fr);
+
             gap: 18px;
         }
 
@@ -591,6 +639,7 @@
 
         .why-item-number {
             color: #a0a79d;
+
             font-size: 12px;
             font-weight: 700;
 
@@ -599,12 +648,15 @@
 
         .why-item h3 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 20px;
+
             margin-bottom: 8px;
         }
 
         .why-item p {
             color: var(--muted);
+
             font-size: 14px;
         }
 
@@ -620,7 +672,9 @@
         .featured-card {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
+
             align-items: center;
+
             gap: 70px;
 
             padding: 65px;
@@ -640,18 +694,20 @@
             border-radius: 45px;
 
             background: white;
-
             color: var(--accent);
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 42px;
             font-weight: 700;
 
-            box-shadow: 0 20px 45px rgba(30, 40, 30, 0.08);
+            box-shadow:
+                0 20px 45px rgba(30,40,30,0.08);
         }
 
         .featured-card h2 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 43px;
             line-height: 1.1;
 
@@ -660,6 +716,7 @@
 
         .featured-card p {
             color: var(--muted);
+
             max-width: 620px;
 
             margin-bottom: 25px;
@@ -667,7 +724,115 @@
 
 
         /* =========================
-           SUPPORT CTA
+           PLATFORM
+        ========================= */
+
+        .platform-section {
+            padding: 105px 0;
+        }
+
+        .platform-grid {
+            display: flex;
+
+            gap: 18px;
+
+            width: 100%;
+        }
+
+        .platform-card {
+            flex: 1;
+
+            min-width: 0;
+
+            display: flex;
+            align-items: center;
+
+            gap: 20px;
+
+            padding: 25px;
+
+            background: white;
+
+            border: 1px solid var(--line);
+            border-radius: 22px;
+
+            transition: 0.25s ease;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 18px 45px rgba(30,40,30,0.08);
+        }
+
+        .platform-icon {
+            width: 62px;
+            height: 62px;
+
+            flex-shrink: 0;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 17px;
+
+            background: var(--dark);
+            color: white;
+
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .platform-content {
+            flex: 1;
+        }
+
+        .platform-content span {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: var(--accent);
+
+            font-size: 11px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+        }
+
+        .platform-content h3 {
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 20px;
+
+            margin-bottom: 4px;
+        }
+
+        .platform-content p {
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        .platform-arrow {
+            color: var(--muted);
+
+            font-size: 22px;
+
+            transition: 0.2s ease;
+        }
+
+        .platform-card:hover .platform-arrow {
+            color: var(--accent);
+
+            transform: translateX(3px);
+        }
+
+
+        /* =========================
+           SUPPORT
         ========================= */
 
         .support-section {
@@ -680,19 +845,22 @@
             text-align: center;
 
             background: white;
-            border: 1px solid var(--line);
 
+            border: 1px solid var(--line);
             border-radius: 30px;
         }
 
         .support-card h2 {
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 42px;
+
             margin-bottom: 12px;
         }
 
         .support-card p {
             max-width: 600px;
+
             margin: 0 auto 25px;
 
             color: var(--muted);
@@ -720,7 +888,8 @@
 
         .final-card h2 {
             font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(35px, 5vw, 52px);
+
+            font-size: clamp(35px,5vw,52px);
             line-height: 1.1;
 
             margin-bottom: 15px;
@@ -728,6 +897,7 @@
 
         .final-card p {
             max-width: 600px;
+
             margin: 0 auto 28px;
 
             color: #d8e1d9;
@@ -735,221 +905,169 @@
 
         .final-card .button {
             background: white;
+
             color: var(--accent-dark);
         }
 
 
         /* =========================
-   PLATFORM SECTION
-========================= */
-
-.platform-section {
-    padding: 105px 0;
-}
-
-.platform-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
-    width: 100%;
-}
-
-.platform-card {
-    flex: 1;
-    min-width: 0;
-}
-
-.platform-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    padding: 25px;
-
-    background: white;
-
-    border: 1px solid var(--line);
-    border-radius: 22px;
-
-    transition: 0.25s ease;
-}
-
-.platform-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 18px 45px rgba(30, 40, 30, 0.08);
-}
-
-.platform-icon {
-    width: 62px;
-    height: 62px;
-
-    flex-shrink: 0;
-
-    display: grid;
-    place-items: center;
-
-    border-radius: 17px;
-
-    background: var(--dark);
-    color: white;
-
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.platform-content {
-    flex: 1;
-}
-
-.platform-content span {
-    display: block;
-
-    margin-bottom: 5px;
-
-    color: var(--accent);
-
-    font-size: 11px;
-    font-weight: 700;
-
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-}
-
-.platform-content h3 {
-    margin-bottom: 4px;
-
-    font-family: "Space Grotesk", sans-serif;
-
-    font-size: 20px;
-}
-
-.platform-content p {
-    color: var(--muted);
-
-    font-size: 13px;
-}
-
-.platform-arrow {
-    font-size: 22px;
-    color: var(--muted);
-
-    transition: 0.2s ease;
-}
-
-.platform-card:hover .platform-arrow {
-    color: var(--accent);
-    transform: translateX(3px);
-}
-
-
-/* PLATFORM MOBILE */
-
-@media (max-width: 650px) {
-
-    .platform-grid {
-        flex-direction: column;
-    }
-
-}
-        /* =========================
            FOOTER
         ========================= */
 
         footer {
-            padding: 55px 0 30px;
+            padding: 65px 0 28px;
 
             background: var(--dark);
             color: #aeb3ac;
         }
 
-        .footer-top {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
+        .footer-main {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
 
-            padding-bottom: 40px;
+            align-items: start;
+
+            gap: 70px;
+
+            padding-bottom: 45px;
         }
 
         .footer-brand h3 {
             color: white;
 
             font-family: "Space Grotesk", sans-serif;
-            font-size: 22px;
+
+            font-size: 23px;
 
             margin-bottom: 8px;
         }
 
-        .footer-brand p {
-          .footer-social {
-    margin-top: 20px;
-}
+        .footer-brand > p {
+            max-width: 360px;
 
-.social-title {
-    margin-bottom: 10px;
+            color: #aeb3ac;
 
-    color: white;
+            font-size: 14px;
+        }
 
-    font-size: 13px;
-    font-weight: 700;
-}
 
-.social-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
+        /* SOCIAL */
 
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+        .footer-social {
+            margin-top: 25px;
+        }
 
-    min-height: 34px;
-    padding: 0 12px;
+        .social-label {
+            display: block;
 
-    border: 1px solid #343832;
-    border-radius: 9px;
+            color: #8f958d;
 
-    font-size: 12px;
+            font-size: 11px;
+            font-weight: 700;
 
-    transition: 0.2s ease;
-}
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
 
-.social-disabled {
-    color: #8f958d;
-    cursor: default;
-}
+            margin-bottom: 11px;
+        }
 
-        .footer-links {
+        .social-icons {
             display: flex;
             flex-wrap: wrap;
-            align-content: flex-start;
-            justify-content: flex-end;
-            gap: 18px 25px;
+
+            gap: 9px;
+        }
+
+        .social-icon {
+            width: 39px;
+            height: 39px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid #343832;
+            border-radius: 11px;
+
+            background: #1d201c;
+            color: #b9beb7;
+
+            transition: 0.2s ease;
+
+            cursor: default;
+        }
+
+        .social-icon:hover {
+            color: white;
+
+            border-color: #4f564d;
+
+            transform: translateY(-2px);
+        }
+
+        .social-icon svg {
+            width: 17px;
+            height: 17px;
+
+            fill: currentColor;
+        }
+
+        .social-icon.instagram svg {
+            fill: none;
+
+            stroke: currentColor;
+
+            stroke-width: 1.9;
+        }
+
+        .social-x {
+            font-family: Arial, sans-serif;
+
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+
+        /* FOOTER LINKS */
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(130px,1fr));
+
+            gap: 13px 35px;
+
+            justify-self: end;
+
+            width: min(430px,100%);
         }
 
         .footer-links a {
+            color: #aeb3ac;
+
             font-size: 13px;
-            transition: 0.2s;
+
+            transition: 0.2s ease;
         }
 
         .footer-links a:hover {
             color: white;
+
+            transform: translateX(2px);
         }
 
         .footer-bottom {
-            padding-top: 22px;
+            padding-top: 23px;
 
             border-top: 1px solid #343832;
+
+            color: #858b83;
 
             font-size: 12px;
         }
 
 
         /* =========================
-           MOBILE
+           TABLET
         ========================= */
 
         @media (max-width: 900px) {
@@ -966,6 +1084,7 @@
 
             .intro-box {
                 grid-template-columns: 1fr;
+
                 gap: 25px;
             }
 
@@ -976,19 +1095,45 @@
             .why-grid {
                 gap: 45px;
             }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+            .footer-links {
+                justify-self: start;
+
+                width: 100%;
+            }
+
         }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 650px) {
 
+            .container {
+                width: min(92%,1160px);
+            }
+
             .nav-inner {
                 height: auto;
+
                 padding: 15px 0;
+
                 flex-direction: column;
+
                 gap: 14px;
             }
 
             .nav-links {
                 gap: 17px;
+
                 flex-wrap: wrap;
                 justify-content: center;
             }
@@ -1005,13 +1150,17 @@
                 font-size: 16px;
             }
 
+            .hero-visual {
+                min-height: 330px;
+            }
+
             .visual-orbit {
-                width: 300px;
-                height: 300px;
+                width: 280px;
+                height: 280px;
             }
 
             .visual-card {
-                width: 250px;
+                width: 245px;
             }
 
             .intro-box,
@@ -1031,13 +1180,54 @@
                 grid-template-columns: 1fr;
             }
 
-            .footer-top {
+            .platform-grid {
                 flex-direction: column;
             }
 
-            .footer-links {
-                justify-content: flex-start;
+            .platform-card {
+                width: 100%;
             }
+
+            .final-card {
+                padding: 55px 24px;
+            }
+
+            footer {
+                padding-top: 50px;
+            }
+
+            .footer-main {
+                gap: 35px;
+            }
+
+            .footer-links {
+                grid-template-columns: repeat(2,1fr);
+
+                gap: 14px 20px;
+            }
+
+            .social-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+        }
+
+
+        @media (max-width: 420px) {
+
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+
+            .platform-card {
+                align-items: flex-start;
+            }
+
+            .platform-arrow {
+                margin-left: auto;
+            }
+
         }
 
     </style>
@@ -1056,9 +1246,13 @@
 
             <a href="./" class="brand">
 
-                <span class="brand-mark">CC</span>
+                <span class="brand-mark">
+                    CC
+                </span>
 
-                <span id="companyName">Cell Cave</span>
+                <span id="companyName">
+                    Cell Cave
+                </span>
 
             </a>
 
@@ -1066,19 +1260,27 @@
             <ul class="nav-links">
 
                 <li>
-                    <a href="./">Home</a>
+                    <a href="./">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="apps/">Apps</a>
+                    <a href="apps/">
+                        Apps
+                    </a>
                 </li>
 
                 <li>
-                    <a href="support/">Support</a>
+                    <a href="support/">
+                        Support
+                    </a>
                 </li>
 
                 <li>
-                    <a href="about/">About</a>
+                    <a href="about/">
+                        About
+                    </a>
                 </li>
 
             </ul>
@@ -1114,10 +1316,8 @@
 
 
                     <h1 id="heroTitle">
-
                         Useful Apps for
                         <span>Everyday Digital Needs</span>
-
                     </h1>
 
 
@@ -1155,8 +1355,6 @@
 
                 </div>
 
-
-                <!-- HERO VISUAL -->
 
                 <div class="hero-visual">
 
@@ -1214,7 +1412,7 @@
 
 
         <!-- =========================
-             ABOUT / INTRO
+             INTRO
         ========================= -->
 
         <section
@@ -1241,12 +1439,10 @@
 
                     <p id="aboutDescription">
 
-                        At Cell Cave, we focus on creating
-                        straightforward mobile applications that
-                        solve common digital tasks. Our approach is
-                        simple: understand the need, remove
-                        unnecessary complexity, and create an
-                        experience that is easy to use.
+                        Cell Cave focuses on practical utility
+                        applications designed to make everyday
+                        digital tasks simpler, more convenient,
+                        and easier to manage.
 
                     </p>
 
@@ -1265,10 +1461,12 @@
 
             <div class="container">
 
-
                 <div class="section-heading">
 
-                    <div class="section-kicker">
+                    <div
+                        class="section-kicker"
+                        style="color:#426b4d;"
+                    >
                         Our Collection
                     </div>
 
@@ -1319,17 +1517,19 @@
 
 
         <!-- =========================
-             WHY CELL CAVE
+             WHY
         ========================= -->
 
         <section class="why-section">
 
             <div class="container why-grid">
 
-
                 <div class="why-intro">
 
-                    <div class="section-kicker">
+                    <div
+                        class="section-kicker"
+                        style="color:#426b4d;"
+                    >
                         Our Approach
                     </div>
 
@@ -1338,8 +1538,8 @@
                     </h2>
 
                     <p id="whyDescription">
-                        We aim to keep our apps useful without making
-                        them unnecessarily complicated.
+                        We aim to keep our apps useful without
+                        making them unnecessarily complicated.
                     </p>
 
                 </div>
@@ -1357,7 +1557,7 @@
 
 
         <!-- =========================
-             FEATURED APP
+             FEATURED
         ========================= -->
 
         <section class="featured-section">
@@ -1365,7 +1565,6 @@
             <div class="container">
 
                 <div class="featured-card">
-
 
                     <div>
 
@@ -1378,20 +1577,29 @@
 
                     <div>
 
-                        <div class="section-kicker">
+                        <div
+                            class="section-kicker"
+                            style="color:#426b4d;"
+                        >
+
                             <span id="featuredLabel">
                                 Featured App
                             </span>
+
                         </div>
+
 
                         <h2 id="featuredTitle">
                             Status Saver
                         </h2>
 
+
                         <p id="featuredDescription">
+
                             Status Saver provides a simple way to
                             save and manage supported status content
                             from your device.
+
                         </p>
 
 
@@ -1413,108 +1621,115 @@
 
 
         <!-- =========================
-     AVAILABLE PLATFORMS
-========================= -->
+             PLATFORM
+        ========================= -->
 
-<section class="platform-section">
+        <section class="platform-section">
 
-    <div class="container">
+            <div class="container">
 
-        <div class="section-heading">
+                <div class="section-heading">
 
-            <div class="section-kicker">
-                Our Platforms
+                    <div
+                        class="section-kicker"
+                        style="color:#426b4d;"
+                    >
+                        Our Platforms
+                    </div>
+
+                    <h2>
+                        Find Cell Cave on your platform
+                    </h2>
+
+                    <p>
+                        Our apps are currently available on Google Play,
+                        with App Store availability coming soon.
+                    </p>
+
+                </div>
+
+
+                <div class="platform-grid">
+
+
+                    <a
+                        href="https://play.google.com/store/apps/developer?id=Cell+Cave"
+                        class="platform-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <div class="platform-icon">
+                            ▶
+                        </div>
+
+
+                        <div class="platform-content">
+
+                            <span>
+                                Available now
+                            </span>
+
+                            <h3>
+                                Google Play
+                            </h3>
+
+                            <p>
+                                Get Cell Cave apps on Android.
+                            </p>
+
+                        </div>
+
+
+                        <div class="platform-arrow">
+                            ↗
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="app-store/"
+                        class="platform-card"
+                    >
+
+                        <div class="platform-icon">
+                            
+                        </div>
+
+
+                        <div class="platform-content">
+
+                            <span>
+                                Coming soon
+                            </span>
+
+                            <h3>
+                                App Store
+                            </h3>
+
+                            <p>
+                                Cell Cave apps are coming soon
+                                to iPhone and iPad.
+                            </p>
+
+                        </div>
+
+
+                        <div class="platform-arrow">
+                            →
+                        </div>
+
+                    </a>
+
+
+                </div>
+
             </div>
 
-            <h2>
-                Find Cell Cave on your platform
-            </h2>
-
-            <p>
-                Our apps are currently available on Google Play,
-                with App Store availability coming soon.
-            </p>
-
-        </div>
+        </section>
 
 
-        <div class="platform-grid">
-
-            <!-- GOOGLE PLAY -->
-
-            <a
-                href="https://play.google.com/store/apps/developer?id=Cell+Cave"
-                class="platform-card"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <div class="platform-icon google-icon">
-                    ▶
-                </div>
-
-                <div class="platform-content">
-
-                    <span>
-                        Available now
-                    </span>
-
-                    <h3>
-                        Google Play
-                    </h3>
-
-                    <p>
-                        Get Cell Cave apps on Android.
-                    </p>
-
-                </div>
-
-                <div class="platform-arrow">
-                    ↗
-                </div>
-
-            </a>
-
-
-            <!-- APP STORE -->
-
-            <a
-                href="app-store/"
-                class="platform-card"
-            >
-
-                <div class="platform-icon apple-icon">
-                    
-                </div>
-
-                <div class="platform-content">
-
-                    <span>
-                        Coming soon
-                    </span>
-
-                    <h3>
-                        App Store
-                    </h3>
-
-                    <p>
-                        Cell Cave apps are coming soon
-                        to iPhone and iPad.
-                    </p>
-
-                </div>
-
-                <div class="platform-arrow">
-                    →
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
         <!-- =========================
              SUPPORT
         ========================= -->
@@ -1525,7 +1740,10 @@
 
                 <div class="support-card">
 
-                    <div class="section-kicker">
+                    <div
+                        class="section-kicker"
+                        style="color:#426b4d;"
+                    >
                         Support
                     </div>
 
@@ -1533,10 +1751,13 @@
                         Need Help?
                     </h2>
 
+
                     <p id="supportDescription">
+
                         Have a question about one of our apps?
                         Visit our support page to find help and
                         contact information.
+
                     </p>
 
 
@@ -1569,9 +1790,12 @@
                         Explore the Cell Cave App Collection
                     </h2>
 
+
                     <p id="finalDescription">
-                        Discover simple utility apps designed to make
-                        everyday digital tasks easier.
+
+                        Discover simple utility apps designed to
+                        make everyday digital tasks easier.
+
                     </p>
 
 
@@ -1602,7 +1826,7 @@
         <div class="container">
 
 
-            <div class="footer-top">
+            <div class="footer-main">
 
 
                 <div class="footer-brand">
@@ -1611,84 +1835,214 @@
                         Cell Cave
                     </h3>
 
+
                     <p id="footerTagline">
                         Simple Utilities. Smarter Everyday.
                     </p>
 
-                  <div class="footer-social">
 
-    <div class="social-title">
-        Follow Cell Cave
-    </div>
+                    <div class="footer-social">
 
-    <div class="social-links">
-
-        <span class="social-link social-disabled">
-            Facebook
-        </span>
-
-        <span class="social-link social-disabled">
-            Instagram
-        </span>
-
-        <span class="social-link social-disabled">
-            LinkedIn
-        </span>
-
-        <span class="social-link social-disabled">
-            YouTube
-        </span>
-
-        <span class="social-link social-disabled">
-            X
-        </span>
-
-    </div>
-
-</div>
+                        <span class="social-label">
+                            Follow Cell Cave
+                        </span>
 
 
-                <div class="footer-links">
+                        <div class="social-icons">
 
-                    <a href="./">Home</a>
 
-                    <a href="apps/">Apps</a>
+                            <!-- Facebook -->
 
-                    <a href="support/">Support</a>
+                            <span
+                                class="social-icon"
+                                title="Facebook"
+                                aria-label="Facebook"
+                            >
 
-                    <a href="about/">About</a>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M13.7 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v9h3.7z"/>
+                                </svg>
 
-                    <a href="privacy/">Privacy Policy</a>
+                            </span>
 
-                    <a href="terms/">Terms of Use</a>
-                    
-                    <a href="app-store/">App Store</a>
 
-                    <a href="https://play.google.com/store/apps/developer?id=Cell+Cave" target="_blank" rel="noopener">Google Play</a>
+                            <!-- Instagram -->
+
+                            <span
+                                class="social-icon instagram"
+                                title="Instagram"
+                                aria-label="Instagram"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <rect
+                                        x="3.5"
+                                        y="3.5"
+                                        width="17"
+                                        height="17"
+                                        rx="5"
+                                    ></rect>
+
+                                    <circle
+                                        cx="12"
+                                        cy="12"
+                                        r="4"
+                                    ></circle>
+
+                                    <circle
+                                        cx="17.5"
+                                        cy="6.5"
+                                        r="0.8"
+                                        fill="currentColor"
+                                        stroke="none"
+                                    ></circle>
+
+                                </svg>
+
+                            </span>
+
+
+                            <!-- LinkedIn -->
+
+                            <span
+                                class="social-icon"
+                                title="LinkedIn"
+                                aria-label="LinkedIn"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M5.2 8.2H2.4V21h2.8V8.2zM3.8 2.5A1.7 1.7 0 1 0 3.8 5.9a1.7 1.7 0 0 0 0-3.4zM21.6 13.7c0-3.9-2.1-5.7-4.9-5.7-2.3 0-3.3 1.2-3.8 2.1V8.2h-2.8V21h2.8v-6.4c0-1.7.3-3.4 2.5-3.4 2.1 0 2.1 2 2.1 3.5V21h2.8l.1-7.3z"/>
+
+                                </svg>
+
+                            </span>
+
+
+                            <!-- YouTube -->
+
+                            <span
+                                class="social-icon"
+                                title="YouTube"
+                                aria-label="YouTube"
+                            >
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M21.4 7.1c-.2-1.3-1.1-2.2-2.4-2.4C17.3 4.4 14.7 4.3 12 4.3s-5.3.1-7 .4c-1.3.2-2.2 1.1-2.4 2.4-.2 1.4-.3 3.1-.3 4.9s.1 3.5.3 4.9c.2 1.3 1.1 2.2 2.4 2.4 1.7.3 4.3.4 7 .4s5.3-.1 7-.4c1.3-.2 2.2-1.1 2.4-2.4.2-1.4.3-3.1.3-4.9s-.1-3.5-.3-4.9z"/>
+
+                                    <path
+                                        d="M10 8.7l6 3.3-6 3.3V8.7z"
+                                        fill="#171916"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <!-- X -->
+
+                            <span
+                                class="social-icon social-x"
+                                title="X"
+                                aria-label="X"
+                            >
+                                X
+                            </span>
+
+
+                        </div>
+
+                    </div>
 
                 </div>
 
+
+                <nav
+                    class="footer-links"
+                    aria-label="Footer navigation"
+                >
+
+                    <a href="./">
+                        Home
+                    </a>
+
+                    <a href="apps/">
+                        Apps
+                    </a>
+
+                    <a href="support/">
+                        Support
+                    </a>
+
+                    <a href="about/">
+                        About
+                    </a>
+
+                    <a href="privacy/">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms/">
+                        Terms of Use
+                    </a>
+
+                    <a href="app-store/">
+                        App Store
+                    </a>
+
+                    <a
+                        href="https://play.google.com/store/apps/developer?id=Cell+Cave"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Google Play
+                    </a>
+
+                </nav>
+
+
             </div>
 
 
-            <div
-                class="footer-bottom"
-                id="copyright"
-            >
-                © 2026 Cell Cave. All rights reserved.
+            <div class="footer-bottom">
+
+                <span id="copyright">
+                    © 2026 Cell Cave. All rights reserved.
+                </span>
+
             </div>
+
 
         </div>
 
     </footer>
 
 
-    <!-- CONTENT -->
+    <!-- =========================
+         CONTENT
+    ========================= -->
 
     <script src="content.js"></script>
 
 
-    <!-- PAGE SCRIPT -->
+    <!-- =========================
+         SCRIPT
+    ========================= -->
 
     <script>
 
@@ -1705,17 +2059,21 @@
         document.getElementById("heroBadge").textContent =
             siteContent.hero.badge;
 
+
         document.getElementById("heroTitle").innerHTML =
             siteContent.hero.title.replace(
                 "Everyday Digital Needs",
                 "<span>Everyday Digital Needs</span>"
             );
 
+
         document.getElementById("heroDescription").textContent =
             siteContent.hero.description;
 
+
         document.getElementById("heroPrimary").textContent =
             siteContent.hero.primaryButton;
+
 
         document.getElementById("heroSecondary").textContent =
             siteContent.hero.secondaryButton;
@@ -1724,12 +2082,14 @@
         document.getElementById("aboutTitle").textContent =
             siteContent.about.title;
 
+
         document.getElementById("aboutDescription").textContent =
             siteContent.about.description;
 
 
         document.getElementById("appsTitle").textContent =
             siteContent.apps.title;
+
 
         document.getElementById("appsDescription").textContent =
             siteContent.apps.description;
@@ -1744,7 +2104,9 @@
             const card =
                 document.createElement("article");
 
-            card.className = "app-card";
+
+            card.className =
+                "app-card";
 
 
             card.innerHTML = `
@@ -1779,6 +2141,7 @@
         document.getElementById("whyTitle").textContent =
             siteContent.whyCellCave.title;
 
+
         document.getElementById("whyDescription").textContent =
             siteContent.whyCellCave.description;
 
@@ -1793,7 +2156,9 @@
                 const item =
                     document.createElement("article");
 
-                item.className = "why-item";
+
+                item.className =
+                    "why-item";
 
 
                 item.innerHTML = `
@@ -1822,14 +2187,18 @@
         document.getElementById("featuredLabel").textContent =
             siteContent.featuredApp.label;
 
+
         document.getElementById("featuredTitle").textContent =
             siteContent.featuredApp.title;
+
 
         document.getElementById("featuredDescription").textContent =
             siteContent.featuredApp.description;
 
+
         document.getElementById("featuredButton").textContent =
             siteContent.featuredApp.button;
+
 
         document.getElementById("featuredButton").href =
             siteContent.featuredApp.link;
@@ -1838,11 +2207,14 @@
         document.getElementById("supportTitle").textContent =
             siteContent.support.title;
 
+
         document.getElementById("supportDescription").textContent =
             siteContent.support.description;
 
+
         document.getElementById("supportButton").textContent =
             siteContent.support.button;
+
 
         document.getElementById("supportButton").href =
             siteContent.support.link;
@@ -1851,11 +2223,14 @@
         document.getElementById("finalTitle").textContent =
             siteContent.finalCta.title;
 
+
         document.getElementById("finalDescription").textContent =
             siteContent.finalCta.description;
 
+
         document.getElementById("finalButton").textContent =
             siteContent.finalCta.button;
+
 
         document.getElementById("finalButton").href =
             siteContent.finalCta.link;
@@ -1870,14 +2245,19 @@
             const slider =
                 document.getElementById("appsTrack");
 
+
             slider.scrollBy({
+
                 left: direction * 320,
+
                 behavior: "smooth"
+
             });
 
         }
 
     </script>
+
 
 </body>
 </html>
