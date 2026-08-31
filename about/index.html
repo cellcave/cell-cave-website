@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Learn more about Cell Cave and our focus on practical utility apps for everyday digital needs."
+        content="Learn more about Cell Cave and our focus on practical mobile apps for everyday digital needs."
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,11 +38,15 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: "DM Sans", sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
         a {
@@ -55,22 +59,20 @@
             margin: auto;
         }
 
-        /* NAVBAR */
+        /* HEADER */
 
         .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
-
             background: rgba(246, 247, 244, 0.88);
             backdrop-filter: blur(16px);
-
+            -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid rgba(227, 230, 223, 0.8);
         }
 
         .nav-inner {
             height: 78px;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -80,7 +82,6 @@
             display: flex;
             align-items: center;
             gap: 11px;
-
             font-family: "Space Grotesk", sans-serif;
             font-size: 20px;
             font-weight: 700;
@@ -89,23 +90,19 @@
         .brand-mark {
             width: 38px;
             height: 38px;
-
             display: grid;
             place-items: center;
-
             border-radius: 12px;
-
             background: var(--dark);
             color: white;
-
             font-size: 11px;
+            letter-spacing: 0.5px;
         }
 
         .nav-links {
             display: flex;
             align-items: center;
             gap: 30px;
-
             list-style: none;
         }
 
@@ -113,345 +110,275 @@
             color: var(--muted);
             font-size: 14px;
             font-weight: 600;
-
             transition: 0.2s ease;
         }
 
-        .nav-links a:hover {
+        .nav-links a:hover,
+        .nav-links .active {
             color: var(--text);
         }
 
         /* HERO */
 
         .about-hero {
-            padding: 110px 0 80px;
+            padding: 105px 0 80px;
         }
 
         .eyebrow {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-
             padding: 7px 12px;
-
             border: 1px solid var(--line);
             border-radius: 999px;
-
             background: rgba(255,255,255,0.65);
-
             color: var(--accent);
-
             font-size: 12px;
             font-weight: 700;
-            text-transform: uppercase;
             letter-spacing: 0.7px;
-
+            text-transform: uppercase;
             margin-bottom: 24px;
         }
 
         .eyebrow-dot {
             width: 7px;
             height: 7px;
-
             border-radius: 50%;
             background: var(--accent);
         }
 
         .about-hero h1 {
             max-width: 850px;
-
             font-family: "Space Grotesk", sans-serif;
             font-size: clamp(48px, 6vw, 72px);
             line-height: 1.04;
             letter-spacing: -2.5px;
-
             margin-bottom: 24px;
+        }
+
+        .about-hero h1 span {
+            color: var(--accent);
         }
 
         .about-hero p {
             max-width: 760px;
-
             color: var(--muted);
-
             font-size: 18px;
             line-height: 1.8;
         }
 
-        /* MAIN ABOUT */
+        /* CONTENT */
 
         .about-section {
-            padding: 0 0 105px;
+            padding: 10px 0 110px;
         }
 
         .about-grid {
             display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
-            gap: 60px;
-
-            padding: 60px;
-
-            background: var(--dark);
-            color: white;
-
-            border-radius: 30px;
-        }
-
-        .section-kicker {
-            color: #aebcaf;
-
-            font-size: 12px;
-            font-weight: 700;
-
-            text-transform: uppercase;
-            letter-spacing: 1px;
-
-            margin-bottom: 15px;
-        }
-
-        .about-grid h2 {
-            font-family: "Space Grotesk", sans-serif;
-
-            font-size: 42px;
-            line-height: 1.1;
-        }
-
-        .about-copy p {
-            color: #b8beb8;
-
-            font-size: 17px;
-            line-height: 1.85;
-
-            margin-bottom: 18px;
-        }
-
-        .about-copy p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* PRINCIPLES */
-
-        .principles-section {
-            padding: 0 0 105px;
-        }
-
-        .section-heading {
-            max-width: 700px;
-
-            margin-bottom: 40px;
-        }
-
-        .section-heading h2 {
-            font-family: "Space Grotesk", sans-serif;
-
-            font-size: clamp(36px, 5vw, 50px);
-            line-height: 1.1;
-
-            letter-spacing: -1.5px;
-
-            margin-bottom: 14px;
-        }
-
-        .section-heading p {
-            color: var(--muted);
-
-            font-size: 17px;
-        }
-
-        .principles-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
+            grid-template-columns: repeat(2, 1fr);
             gap: 18px;
         }
 
-        .principle-card {
-            padding: 30px;
-
+        .about-card {
+            padding: 38px;
             background: white;
-
             border: 1px solid var(--line);
-            border-radius: 22px;
-
-            transition: 0.2s ease;
+            border-radius: 24px;
         }
 
-        .principle-card:hover {
-            transform: translateY(-4px);
-
-            box-shadow:
-                0 18px 40px rgba(30, 40, 30, 0.07);
+        .about-card.large {
+            grid-column: 1 / -1;
         }
 
-        .principle-number {
-            color: #9fa69c;
-
-            font-size: 12px;
-            font-weight: 700;
-
-            margin-bottom: 28px;
-        }
-
-        .principle-card h3 {
+        .about-card h2 {
             font-family: "Space Grotesk", sans-serif;
-
-            font-size: 21px;
-
-            margin-bottom: 9px;
-        }
-
-        .principle-card p {
-            color: var(--muted);
-
-            font-size: 14px;
-            line-height: 1.75;
-        }
-
-        /* CTA */
-
-        .cta-section {
-            padding: 0 0 105px;
-        }
-
-        .cta-card {
-            padding: 70px 35px;
-
-            text-align: center;
-
-            background: var(--soft);
-
-            border-radius: 30px;
-        }
-
-        .cta-card h2 {
-            font-family: "Space Grotesk", sans-serif;
-
-            font-size: clamp(34px, 5vw, 48px);
-
+            font-size: 27px;
             margin-bottom: 14px;
         }
 
-        .cta-card p {
-            max-width: 620px;
-
-            margin: 0 auto 26px;
-
+        .about-card p {
             color: var(--muted);
+            line-height: 1.85;
         }
 
-        .button {
+        .cta {
+            margin-top: 18px;
+            padding: 52px;
+            background: var(--dark);
+            color: white;
+            border-radius: 28px;
+        }
+
+        .cta h2 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            color: #b8beb8;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-
             min-height: 48px;
             padding: 0 20px;
-
             border-radius: 12px;
-
-            background: var(--dark);
-            color: white;
-
+            background: white;
+            color: var(--dark);
             font-size: 14px;
             font-weight: 700;
-
             transition: 0.2s ease;
         }
 
-        .button:hover {
-            background: var(--accent-dark);
+        .cta-button:hover {
             transform: translateY(-2px);
+            background: var(--soft);
         }
 
         /* FOOTER */
 
         footer {
-            padding: 55px 0 30px;
-
+            padding: 65px 0 28px;
             background: var(--dark);
             color: #aeb3ac;
         }
 
-        .footer-top {
-            display: flex;
-            justify-content: space-between;
-
-            gap: 40px;
-
-            padding-bottom: 40px;
+        .footer-main {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            align-items: start;
+            gap: 70px;
+            padding-bottom: 45px;
         }
 
         .footer-brand h3 {
             color: white;
-
             font-family: "Space Grotesk", sans-serif;
-            font-size: 22px;
-
+            font-size: 23px;
             margin-bottom: 8px;
         }
 
-        .footer-brand p {
-            max-width: 350px;
-
+        .footer-brand > p {
+            max-width: 360px;
+            color: #aeb3ac;
             font-size: 14px;
         }
 
-        .footer-links {
+        .footer-social {
+            margin-top: 25px;
+        }
+
+        .social-label {
+            display: block;
+            margin-bottom: 11px;
+            color: #8f958d;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .social-icons {
             display: flex;
             flex-wrap: wrap;
+            gap: 9px;
+        }
 
-            justify-content: flex-end;
+        .social-icon {
+            width: 39px;
+            height: 39px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #343832;
+            border-radius: 11px;
+            background: #1d201c;
+            color: #b9beb7;
+            transition: 0.2s ease;
+            cursor: default;
+        }
 
-            gap: 18px 25px;
+        .social-icon:hover {
+            color: white;
+            border-color: #4f564d;
+            transform: translateY(-2px);
+        }
+
+        .social-icon svg {
+            width: 17px;
+            height: 17px;
+            fill: currentColor;
+        }
+
+        .social-icon.instagram svg {
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.9;
+        }
+
+        .social-x {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(130px, 1fr));
+            gap: 13px 35px;
+            justify-self: end;
+            width: min(430px, 100%);
         }
 
         .footer-links a {
+            color: #aeb3ac;
             font-size: 13px;
-
             transition: 0.2s ease;
         }
 
         .footer-links a:hover {
             color: white;
+            transform: translateX(2px);
         }
 
         .footer-bottom {
-            padding-top: 22px;
-
+            padding-top: 23px;
             border-top: 1px solid #343832;
-
+            color: #858b83;
             font-size: 12px;
         }
 
-        /* MOBILE */
-
-        @media (max-width: 850px) {
-
-            .about-grid {
+        @media (max-width: 900px) {
+            .footer-main {
                 grid-template-columns: 1fr;
-
-                gap: 30px;
+                gap: 40px;
             }
 
-            .principles-grid {
-                grid-template-columns: 1fr;
+            .footer-links {
+                justify-self: start;
+                width: 100%;
             }
         }
 
         @media (max-width: 650px) {
+            .container {
+                width: min(92%,1160px);
+            }
 
             .nav-inner {
                 height: auto;
-
                 padding: 15px 0;
-
                 flex-direction: column;
-
                 gap: 14px;
             }
 
             .nav-links {
                 gap: 17px;
-
                 flex-wrap: wrap;
                 justify-content: center;
             }
@@ -461,26 +388,36 @@
             }
 
             .about-grid {
-                padding: 35px 25px;
+                grid-template-columns: 1fr;
             }
 
-            .about-grid h2 {
-                font-size: 34px;
+            .about-card.large {
+                grid-column: auto;
             }
 
-            .cta-card {
-                padding: 45px 24px;
+            .cta {
+                padding: 38px 25px;
             }
 
-            .footer-top {
-                flex-direction: column;
+            .cta h2 {
+                font-size: 31px;
+            }
+
+            footer {
+                padding-top: 50px;
             }
 
             .footer-links {
-                justify-content: flex-start;
+                grid-template-columns: repeat(2,1fr);
+                gap: 14px 20px;
             }
         }
 
+        @media (max-width: 420px) {
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -496,23 +433,10 @@
         </a>
 
         <ul class="nav-links">
-
-            <li>
-                <a href="../">Home</a>
-            </li>
-
-            <li>
-                <a href="../apps/">Apps</a>
-            </li>
-
-            <li>
-                <a href="../support/">Support</a>
-            </li>
-
-            <li>
-                <a href="./">About</a>
-            </li>
-
+            <li><a href="../">Home</a></li>
+            <li><a href="../apps/">Apps</a></li>
+            <li><a href="../support/">Support</a></li>
+            <li><a href="./" class="active">About</a></li>
         </ul>
 
     </div>
@@ -532,7 +456,8 @@
             </div>
 
             <h1>
-                Practical apps for everyday digital needs.
+                Practical mobile apps for
+                <span>everyday needs.</span>
             </h1>
 
             <p>
@@ -552,144 +477,54 @@
 
             <div class="about-grid">
 
-                <div>
+                <article class="about-card large">
 
-                    <div class="section-kicker">
-                        What We Focus On
-                    </div>
-
-                    <h2>
-                        Simple ideas. Practical utility.
-                    </h2>
-
-                </div>
-
-                <div class="about-copy">
+                    <h2>What We Do</h2>
 
                     <p>
-                        Our focus is on creating mobile utilities
-                        around common digital needs without adding
-                        unnecessary complexity.
+                        Cell Cave develops mobile applications focused on
+                        useful everyday digital tasks. Our app collection
+                        includes tools such as Status Saver, File Reader,
+                        Age Calculator, All Video Downloader, and Cloud Backup.
                     </p>
+
+                </article>
+
+                <article class="about-card">
+
+                    <h2>Simple</h2>
 
                     <p>
-                        Cell Cave aims to keep each app straightforward,
-                        accessible, and easy to understand while
-                        maintaining a clean user experience.
+                        We aim to create straightforward experiences
+                        that are easy to understand and use.
                     </p>
 
-                </div>
+                </article>
+
+                <article class="about-card">
+
+                    <h2>Practical</h2>
+
+                    <p>
+                        Our apps are focused on common digital needs
+                        and practical everyday utility.
+                    </p>
+
+                </article>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="cta">
 
-
-    <section class="principles-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <div class="section-kicker" style="color:#426b4d;">
-                    Our Approach
-                </div>
-
-                <h2>
-                    Built around practical use.
-                </h2>
+                <h2>Explore Cell Cave Apps</h2>
 
                 <p>
-                    The Cell Cave approach is centered around clarity,
-                    simplicity, and useful everyday experiences.
+                    Browse our collection of mobile apps designed
+                    around practical everyday digital needs.
                 </p>
 
-            </div>
-
-
-            <div class="principles-grid">
-
-                <article class="principle-card">
-
-                    <div class="principle-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Practical
-                    </h3>
-
-                    <p>
-                        Apps are focused on common digital tasks
-                        and straightforward utility.
-                    </p>
-
-                </article>
-
-
-                <article class="principle-card">
-
-                    <div class="principle-number">
-                        02
-                    </div>
-
-                    <h3>
-                        Simple
-                    </h3>
-
-                    <p>
-                        Experiences are designed to avoid
-                        unnecessary complexity where possible.
-                    </p>
-
-                </article>
-
-
-                <article class="principle-card">
-
-                    <div class="principle-number">
-                        03
-                    </div>
-
-                    <h3>
-                        Focused
-                    </h3>
-
-                    <p>
-                        Each app is intended to provide a clear
-                        experience around its core purpose.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="cta-section">
-
-        <div class="container">
-
-            <div class="cta-card">
-
-                <h2>
-                    Explore the Cell Cave app collection.
-                </h2>
-
-                <p>
-                    Discover our current collection of practical
-                    utility applications.
-                </p>
-
-                <a
-                    href="../apps/"
-                    class="button"
-                >
+                <a href="../apps/" class="cta-button">
                     Explore Our Apps
                 </a>
 
@@ -706,35 +541,68 @@
 
     <div class="container">
 
-        <div class="footer-top">
+        <div class="footer-main">
 
             <div class="footer-brand">
 
-                <h3>
-                    Cell Cave
-                </h3>
+                <h3>Cell Cave</h3>
 
-                <p>
-                    Simple Utilities. Smarter Everyday.
-                </p>
+                <p>Simple Utilities. Smarter Everyday.</p>
+
+                <div class="footer-social">
+
+                    <span class="social-label">
+                        Follow Cell Cave
+                    </span>
+
+                    <div class="social-icons">
+
+                        <span class="social-icon" title="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M13.7 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v9h3.7z"/>
+                            </svg>
+                        </span>
+
+                        <span class="social-icon instagram" title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle>
+                            </svg>
+                        </span>
+
+                        <span class="social-icon" title="LinkedIn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5.2 8.2H2.4V21h2.8V8.2zM3.8 2.5A1.7 1.7 0 1 0 3.8 5.9a1.7 1.7 0 0 0 0-3.4zM21.6 13.7c0-3.9-2.1-5.7-4.9-5.7-2.3 0-3.3 1.2-3.8 2.1V8.2h-2.8V21h2.8v-6.4c0-1.7.3-3.4 2.5-3.4 2.1 0 2.1 2 2.1 3.5V21h2.8l.1-7.3z"/>
+                            </svg>
+                        </span>
+
+                        <span class="social-icon" title="YouTube">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21.4 7.1c-.2-1.3-1.1-2.2-2.4-2.4C17.3 4.4 14.7 4.3 12 4.3s-5.3.1-7 .4c-1.3.2-2.2 1.1-2.4 2.4-.2 1.4-.3 3.1-.3 4.9s.1 3.5.3 4.9c.2 1.3 1.1 2.2 2.4 2.4 1.7.3 4.3.4 7 .4s5.3-.1 7-.4c1.3-.2 2.2-1.1 2.4-2.4.2-1.4.3-3.1.3-4.9s-.1-3.5-.3-4.9z"/>
+                                <path d="M10 8.7l6 3.3-6 3.3V8.7z" fill="#171916"/>
+                            </svg>
+                        </span>
+
+                        <span class="social-icon social-x" title="X">
+                            X
+                        </span>
+
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <div class="footer-links">
+            <nav class="footer-links">
 
                 <a href="../">Home</a>
-
                 <a href="../apps/">Apps</a>
-
-                <a href="./">About</a>
-
                 <a href="../support/">Support</a>
-
+                <a href="./">About</a>
                 <a href="../privacy/">Privacy Policy</a>
-
                 <a href="../terms/">Terms of Use</a>
-
                 <a href="../app-store/">App Store</a>
 
                 <a
@@ -745,7 +613,7 @@
                     Google Play
                 </a>
 
-            </div>
+            </nav>
 
         </div>
 
