@@ -882,12 +882,12 @@
         }
 
         .footer-brand p {
-            .footer-social {
+          .footer-social {
     margin-top: 20px;
 }
 
 .social-title {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 
     color: white;
 
@@ -895,15 +895,32 @@
     font-weight: 700;
 }
 
-.social-links-placeholder {
-    color: #7f857d;
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 34px;
+    padding: 0 12px;
+
+    border: 1px solid #343832;
+    border-radius: 9px;
 
     font-size: 12px;
-    line-height: 1.5;
+
+    transition: 0.2s ease;
 }
-            max-width: 350px;
-            font-size: 14px;
-        }
+
+.social-disabled {
+    color: #8f958d;
+    cursor: default;
+}
 
         .footer-links {
             display: flex;
@@ -1598,14 +1615,34 @@
                         Simple Utilities. Smarter Everyday.
                     </p>
 
-                   <div class="footer-social">
+                  <div class="footer-social">
 
     <div class="social-title">
         Follow Cell Cave
     </div>
 
-    <div class="social-links-placeholder">
-        Social links coming soon
+    <div class="social-links">
+
+        <span class="social-link social-disabled">
+            Facebook
+        </span>
+
+        <span class="social-link social-disabled">
+            Instagram
+        </span>
+
+        <span class="social-link social-disabled">
+            LinkedIn
+        </span>
+
+        <span class="social-link social-disabled">
+            YouTube
+        </span>
+
+        <span class="social-link social-disabled">
+            X
+        </span>
+
     </div>
 
 </div>
