@@ -4,84 +4,94 @@ const siteContent = {
         name: "Cell Cave",
         tagline: "Simple Utilities. Smarter Everyday.",
         description:
-            "Cell Cave creates practical utility apps designed to make everyday digital tasks simpler, faster, and more convenient."
+            "Cell Cave creates practical mobile apps designed to make everyday digital tasks simpler, faster, and more convenient."
     },
 
     hero: {
-        badge: "Mobile Apps by Cell Cave",     
-
+        badge: "Mobile Apps by Cell Cave",
         title: "Useful Apps for Everyday Digital Needs",
-
         description:
-            "From managing files and saving status content to calculating age and backing up important data, Cell Cave builds simple utility apps focused on practical everyday needs.",
-
+            "Cell Cave builds practical mobile apps designed to make everyday digital tasks simpler, more convenient, and easier to manage.",
         primaryButton: "Explore Our Apps",
         secondaryButton: "Learn More"
     },
 
     about: {
         title: "Practical Apps for Everyday Needs",
-
         description:
-            "Cell Cave focuses on practical utility applications designed to make everyday digital tasks simpler, more convenient, and easier to manage."
+            "Cell Cave focuses on practical mobile applications designed to make everyday digital tasks simpler, more convenient, and easier to manage."
     },
 
     apps: {
         title: "Explore Our Apps",
-
         description:
-            "Discover our growing collection of utility applications built to help with everyday digital tasks.",
+            "Discover our collection of mobile applications built to help with everyday digital tasks.",
 
         items: [
 
             {
-                name: "Status Saver",
+                name: "Status Downloader: Video Saver",
                 shortName: "SS",
 
                 description:
-                    "Save and manage supported status content through a simple and convenient experience.",
+                    "A practical mobile app for saving and managing supported status content.",
 
-                link: "apps/status-saver/"
+                link: "apps/status-saver/",
+
+                googlePlayLink:
+                    "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
             },
 
             {
-                name: "File Reader",
-                shortName: "FR",
+                name: "Document Reader: Read All PDF",
+                shortName: "DR",
 
                 description:
-                    "Open and view supported files through a clean and straightforward interface.",
+                    "A practical document reader designed to help users open and read supported document formats.",
 
-                link: "apps/file-reader/"
+                link: "apps/file-reader/",
+
+                googlePlayLink:
+                    "https://play.google.com/store/apps/details?id=com.officedocument.word.docx.document.viewer.pdf"
             },
 
             {
-                name: "Age Calculator",
+                name: "Age Calculator: Date of Birth",
                 shortName: "AC",
 
                 description:
-                    "Calculate age and explore useful date information quickly and easily.",
+                    "Calculate age and useful date information through a simple and convenient mobile experience.",
 
-                link: "apps/age-calculator/"
+                link: "apps/age-calculator/",
+
+                googlePlayLink:
+                    "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
             },
 
             {
-                name: "All Video Downloader",
+                name: "All Video Downloader & Saver",
                 shortName: "VD",
 
                 description:
-                    "A utility app designed to help manage and download videos from supported sources.",
+                    "A mobile utility designed to help manage and download videos from supported sources.",
 
-                link: "apps/all-video-downloader/"
+                link: "apps/all-video-downloader/",
+
+                googlePlayLink:
+                    "https://play.google.com/store/apps/details?id=com.video.downloader.instagram.videosaver"
             },
 
             {
-                name: "Cloud Backup",
+                name: "Cloud Backup: Photo Storage",
                 shortName: "CB",
 
                 description:
-                    "A convenient utility for backing up and organizing important files and data.",
+                    "A practical mobile app focused on cloud backup and photo storage needs.",
 
-                link: "apps/cloud-backup/"
+                link: "apps/cloud-backup/",
+
+                googlePlayLink:
+                    "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault"
             }
 
         ]
@@ -97,28 +107,24 @@ const siteContent = {
 
             {
                 title: "Simple",
-
                 description:
                     "Straightforward experiences that are easy to understand."
             },
 
             {
                 title: "Practical",
-
                 description:
                     "Apps focused on real everyday utility and common digital needs."
             },
 
             {
                 title: "User Focused",
-
                 description:
                     "Clean interfaces designed around a smooth user experience."
             },
 
             {
                 title: "Always Improving",
-
                 description:
                     "We continue refining our apps based on usability and product needs."
             }
@@ -129,14 +135,17 @@ const siteContent = {
     featuredApp: {
         label: "Featured App",
 
-        title: "Status Saver",
+        title: "Status Downloader: Video Saver",
 
         description:
-            "Status Saver provides a simple way to save and manage supported status content from your device.",
+            "Status Downloader: Video Saver provides a practical way to save and manage supported status content.",
 
-        button: "View Status Saver",
+        button: "View App",
 
-        link: "apps/status-saver/"
+        link: "apps/status-saver/",
+
+        googlePlayLink:
+            "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
     },
 
     support: {
@@ -154,7 +163,7 @@ const siteContent = {
         title: "Explore the Cell Cave App Collection",
 
         description:
-            "Discover simple utility apps designed to make everyday digital tasks easier.",
+            "Discover practical mobile apps designed around everyday digital needs.",
 
         button: "Explore All Apps",
 
@@ -162,8 +171,11 @@ const siteContent = {
     },
 
     footer: {
-        copyright: "© 2026 Cell Cave. All rights reserved.",
-        email: "cellcave70@gmail.com"
+        copyright:
+            "© 2026 Cell Cave. All rights reserved.",
+
+        email:
+            "cellcave70@gmail.com"
     }
 
 };
