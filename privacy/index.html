@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Read the Cell Cave Privacy Policy and learn how information may be handled when using Cell Cave apps and services."
+        content="Read the Cell Cave Privacy Policy for information about privacy, third-party services, advertising services, and contact information."
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,19 +59,24 @@
             margin: auto;
         }
 
-        /* NAVBAR */
+        /* HEADER */
 
         .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
+
             background: rgba(246, 247, 244, 0.88);
+
             backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+
             border-bottom: 1px solid rgba(227, 230, 223, 0.8);
         }
 
         .nav-inner {
             height: 78px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -81,6 +86,7 @@
             display: flex;
             align-items: center;
             gap: 11px;
+
             font-family: "Space Grotesk", sans-serif;
             font-size: 20px;
             font-weight: 700;
@@ -89,11 +95,15 @@
         .brand-mark {
             width: 38px;
             height: 38px;
+
             display: grid;
             place-items: center;
+
             border-radius: 12px;
+
             background: var(--dark);
             color: white;
+
             font-size: 11px;
             letter-spacing: 0.5px;
         }
@@ -102,13 +112,16 @@
             display: flex;
             align-items: center;
             gap: 30px;
+
             list-style: none;
         }
 
         .nav-links a {
             color: var(--muted);
+
             font-size: 14px;
             font-weight: 600;
+
             transition: 0.2s ease;
         }
 
@@ -119,125 +132,148 @@
         /* HERO */
 
         .privacy-hero {
-            padding: 100px 0 70px;
+            padding: 105px 0 65px;
         }
 
         .eyebrow {
             display: inline-flex;
             align-items: center;
             gap: 8px;
+
             padding: 7px 12px;
+
             border: 1px solid var(--line);
             border-radius: 999px;
+
             background: rgba(255,255,255,0.65);
+
             color: var(--accent);
+
             font-size: 12px;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.7px;
             text-transform: uppercase;
+
             margin-bottom: 24px;
         }
 
         .eyebrow-dot {
             width: 7px;
             height: 7px;
+
             border-radius: 50%;
+
             background: var(--accent);
         }
 
         .privacy-hero h1 {
-            max-width: 800px;
             font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(45px, 6vw, 70px);
-            line-height: 1.05;
+
+            font-size: clamp(48px, 6vw, 72px);
+            line-height: 1.04;
+
             letter-spacing: -2.5px;
-            margin-bottom: 22px;
+
+            margin-bottom: 20px;
         }
 
         .privacy-hero p {
-            max-width: 720px;
+            max-width: 760px;
+
             color: var(--muted);
+
             font-size: 17px;
+            line-height: 1.8;
         }
 
         .updated {
             display: inline-block;
-            margin-top: 25px;
-            padding: 9px 14px;
-            background: var(--soft);
-            border-radius: 10px;
-            color: var(--accent-dark);
+
+            margin-top: 20px;
+
+            color: var(--accent);
+
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
-        /* CONTENT */
+        /* POLICY */
 
-        .privacy-section {
-            padding: 0 0 110px;
+        .policy-section {
+            padding: 10px 0 110px;
         }
 
-        .privacy-layout {
+        .policy-layout {
             display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 55px;
+            grid-template-columns: 0.32fr 0.68fr;
+
+            gap: 45px;
+
             align-items: start;
         }
 
-        .privacy-menu {
+        .policy-nav {
             position: sticky;
             top: 110px;
-            padding: 22px;
+
+            padding: 25px;
+
             background: white;
+
             border: 1px solid var(--line);
-            border-radius: 18px;
+            border-radius: 20px;
         }
 
-        .privacy-menu h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 16px;
-            margin-bottom: 14px;
-        }
-
-        .privacy-menu a {
+        .policy-nav strong {
             display: block;
-            padding: 7px 0;
-            color: var(--muted);
-            font-size: 13px;
-            transition: 0.2s;
+
+            font-family: "Space Grotesk", sans-serif;
+
+            margin-bottom: 15px;
         }
 
-        .privacy-menu a:hover {
+        .policy-nav a {
+            display: block;
+
+            padding: 7px 0;
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            transition: 0.2s ease;
+        }
+
+        .policy-nav a:hover {
             color: var(--accent);
         }
 
         .policy-content {
-            min-width: 0;
+            display: grid;
+            gap: 16px;
         }
 
         .policy-card {
             padding: 35px;
-            margin-bottom: 18px;
+
             background: white;
+
             border: 1px solid var(--line);
             border-radius: 22px;
         }
 
         .policy-card h2 {
             font-family: "Space Grotesk", sans-serif;
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
 
-        .policy-card h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 18px;
-            margin: 24px 0 8px;
+            font-size: 25px;
+
+            margin-bottom: 14px;
         }
 
         .policy-card p {
             color: var(--muted);
-            margin-bottom: 14px;
+
+            margin-bottom: 13px;
         }
 
         .policy-card p:last-child {
@@ -246,12 +282,12 @@
 
         .policy-card ul {
             padding-left: 20px;
+
             color: var(--muted);
-            margin: 12px 0 16px;
         }
 
         .policy-card li {
-            margin-bottom: 8px;
+            margin: 8px 0;
         }
 
         .policy-card a {
@@ -259,144 +295,277 @@
             font-weight: 600;
         }
 
-        .policy-card a:hover {
-            text-decoration: underline;
-        }
-
-        .service-list {
+        .provider-list {
             display: grid;
-            gap: 12px;
-            margin-top: 20px;
+            gap: 10px;
+
+            margin-top: 18px;
         }
 
-        .service-item {
-            padding: 17px 18px;
-            background: var(--bg);
+        .provider {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 15px 17px;
+
             border: 1px solid var(--line);
-            border-radius: 14px;
+            border-radius: 13px;
+
+            background: var(--bg);
         }
 
-        .service-item strong {
-            display: block;
-            margin-bottom: 4px;
-            color: var(--text);
-        }
-
-        .contact-card {
-            background: var(--soft);
-        }
-
-        .email-link {
-            display: inline-flex;
-            margin-top: 6px;
-            padding: 11px 16px;
-            border-radius: 11px;
-            background: var(--dark);
-            color: white !important;
-            font-size: 14px;
+        .provider span {
             font-weight: 700;
         }
 
-        .email-link:hover {
-            text-decoration: none !important;
-            background: var(--accent-dark);
+        .provider a {
+            font-size: 13px;
+        }
+
+        .contact-box {
+            padding: 27px;
+
+            background: var(--soft);
+
+            border-radius: 17px;
+
+            margin-top: 15px;
+        }
+
+        .contact-box a {
+            font-weight: 700;
         }
 
         /* FOOTER */
 
         footer {
-            padding: 55px 0 30px;
+            padding: 65px 0 28px;
+
             background: var(--dark);
             color: #aeb3ac;
         }
 
-        .footer-top {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-            padding-bottom: 40px;
+        .footer-main {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+
+            align-items: start;
+
+            gap: 70px;
+
+            padding-bottom: 45px;
         }
 
         .footer-brand h3 {
             color: white;
+
             font-family: "Space Grotesk", sans-serif;
-            font-size: 22px;
+
+            font-size: 23px;
+
             margin-bottom: 8px;
         }
 
-        .footer-brand p {
-            max-width: 350px;
+        .footer-brand > p {
+            max-width: 360px;
+
+            color: #aeb3ac;
+
             font-size: 14px;
         }
 
-        .footer-links {
+        .footer-social {
+            margin-top: 25px;
+        }
+
+        .social-label {
+            display: block;
+
+            margin-bottom: 11px;
+
+            color: #8f958d;
+
+            font-size: 11px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .social-icons {
             display: flex;
             flex-wrap: wrap;
-            align-content: flex-start;
-            justify-content: flex-end;
-            gap: 18px 25px;
+
+            gap: 9px;
+        }
+
+        .social-icon {
+            width: 39px;
+            height: 39px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid #343832;
+            border-radius: 11px;
+
+            background: #1d201c;
+            color: #b9beb7;
+
+            transition: 0.2s ease;
+
+            cursor: default;
+        }
+
+        .social-icon:hover {
+            color: white;
+
+            border-color: #4f564d;
+
+            transform: translateY(-2px);
+        }
+
+        .social-icon svg {
+            width: 17px;
+            height: 17px;
+
+            fill: currentColor;
+        }
+
+        .social-icon.instagram svg {
+            fill: none;
+
+            stroke: currentColor;
+            stroke-width: 1.9;
+        }
+
+        .social-x {
+            font-family: Arial, sans-serif;
+
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(130px, 1fr));
+
+            gap: 13px 35px;
+
+            justify-self: end;
+
+            width: min(430px, 100%);
         }
 
         .footer-links a {
+            color: #aeb3ac;
+
             font-size: 13px;
-            transition: 0.2s;
+
+            transition: 0.2s ease;
         }
 
         .footer-links a:hover {
             color: white;
+
+            transform: translateX(2px);
         }
 
         .footer-bottom {
-            padding-top: 22px;
+            padding-top: 23px;
+
             border-top: 1px solid #343832;
+
+            color: #858b83;
+
             font-size: 12px;
         }
 
-        /* MOBILE */
+        /* RESPONSIVE */
 
-        @media (max-width: 850px) {
-            .privacy-layout {
+        @media (max-width: 900px) {
+
+            .policy-layout {
                 grid-template-columns: 1fr;
-                gap: 25px;
             }
 
-            .privacy-menu {
+            .policy-nav {
                 position: static;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-links {
+                justify-self: start;
+                width: 100%;
             }
         }
 
         @media (max-width: 650px) {
+
+            .container {
+                width: min(92%, 1160px);
+            }
+
             .nav-inner {
                 height: auto;
+
                 padding: 15px 0;
+
                 flex-direction: column;
+
                 gap: 14px;
             }
 
             .nav-links {
                 gap: 17px;
+
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
             .privacy-hero {
-                padding: 70px 0 50px;
-            }
-
-            .privacy-hero h1 {
-                letter-spacing: -1.5px;
+                padding: 75px 0 50px;
             }
 
             .policy-card {
-                padding: 25px 20px;
+                padding: 27px 23px;
             }
 
-            .footer-top {
+            .provider {
+                align-items: flex-start;
                 flex-direction: column;
+
+                gap: 5px;
+            }
+
+            footer {
+                padding-top: 50px;
             }
 
             .footer-links {
-                justify-content: flex-start;
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 14px 20px;
+            }
+
+            .social-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 420px) {
+
+            .footer-links {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -404,41 +573,71 @@
 
 <body>
 
+
 <header class="navbar">
+
     <div class="container nav-inner">
 
         <a href="../" class="brand">
-            <span class="brand-mark">CC</span>
-            <span>Cell Cave</span>
+
+            <span class="brand-mark">
+                CC
+            </span>
+
+            <span>
+                Cell Cave
+            </span>
+
         </a>
 
         <ul class="nav-links">
-            <li><a href="../">Home</a></li>
-            <li><a href="../apps/">Apps</a></li>
-            <li><a href="../support/">Support</a></li>
-            <li><a href="../about/">About</a></li>
+
+            <li>
+                <a href="../">Home</a>
+            </li>
+
+            <li>
+                <a href="../apps/">Apps</a>
+            </li>
+
+            <li>
+                <a href="../support/">Support</a>
+            </li>
+
+            <li>
+                <a href="../about/">About</a>
+            </li>
+
         </ul>
 
     </div>
+
 </header>
+
 
 <main>
 
+
     <section class="privacy-hero">
+
         <div class="container">
 
             <div class="eyebrow">
+
                 <span class="eyebrow-dot"></span>
-                Legal
+
+                Cell Cave
+
             </div>
 
-            <h1>Privacy Policy</h1>
+            <h1>
+                Privacy Policy
+            </h1>
 
             <p>
-                This Privacy Policy explains how information may be
-                handled when you use Cell Cave applications and related
-                services, including information that may be processed by
-                third-party advertising and service providers.
+                This Privacy Policy provides general information
+                about privacy practices related to Cell Cave
+                applications and services.
             </p>
 
             <span class="updated">
@@ -446,49 +645,71 @@
             </span>
 
         </div>
+
     </section>
 
 
-    <section class="privacy-section">
+    <section class="policy-section">
 
-        <div class="container privacy-layout">
+        <div class="container policy-layout">
 
-            <aside class="privacy-menu">
 
-                <h3>On this page</h3>
+            <aside class="policy-nav">
 
-                <a href="#overview">Overview</a>
-                <a href="#information">Information</a>
-                <a href="#usage">How Information Is Used</a>
-                <a href="#advertising">Advertising</a>
-                <a href="#third-parties">Third-Party Services</a>
-                <a href="#sharing">Data Sharing</a>
-                <a href="#retention">Data Retention</a>
-                <a href="#security">Security</a>
-                <a href="#children">Children's Privacy</a>
-                <a href="#external">External Links</a>
-                <a href="#changes">Policy Changes</a>
-                <a href="#contact">Contact</a>
+                <strong>
+                    On this page
+                </strong>
+
+                <a href="#overview">
+                    Overview
+                </a>
+
+                <a href="#information">
+                    Information
+                </a>
+
+                <a href="#third-party">
+                    Third-Party Services
+                </a>
+
+                <a href="#advertising">
+                    Advertising Services
+                </a>
+
+                <a href="#children">
+                    Children's Privacy
+                </a>
+
+                <a href="#changes">
+                    Changes
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
 
             </aside>
 
 
             <div class="policy-content">
 
+
                 <article class="policy-card" id="overview">
 
-                    <h2>1. Overview</h2>
+                    <h2>
+                        Overview
+                    </h2>
 
                     <p>
-                        Cell Cave develops practical utility applications
-                        designed to help with everyday digital tasks.
+                        Cell Cave develops practical mobile applications
+                        for everyday digital needs.
                     </p>
 
                     <p>
-                        This Privacy Policy describes the types of information
-                        that may be processed when you use our apps, why that
-                        information may be used, and the role of third-party
-                        services integrated into our applications.
+                        This page is a general company-level privacy policy.
+                        Individual Cell Cave applications may have
+                        additional or app-specific privacy information
+                        where appropriate.
                     </p>
 
                 </article>
@@ -496,261 +717,172 @@
 
                 <article class="policy-card" id="information">
 
-                    <h2>2. Information That May Be Processed</h2>
+                    <h2>
+                        Information and App Usage
+                    </h2>
 
                     <p>
-                        The information processed while using a Cell Cave app
-                        can depend on the app, the features you use, your device
-                        settings, and the third-party services included in that app.
+                        The information processed by a Cell Cave app
+                        may depend on the particular app, its functionality,
+                        the device, permissions granted by the user,
+                        and third-party services used by that app.
                     </p>
 
-                    <h3>Information you provide</h3>
-
                     <p>
-                        If you contact Cell Cave for support, we may receive
-                        information that you voluntarily provide, such as your
-                        email address, the contents of your message, and any
-                        information you choose to include with your support request.
-                    </p>
-
-                    <h3>Device and app information</h3>
-
-                    <p>
-                        Third-party services used by an app may automatically
-                        process technical information. Depending on the service
-                        and your settings, this may include information such as:
-                    </p>
-
-                    <ul>
-                        <li>Device type and operating system information</li>
-                        <li>App version and technical identifiers</li>
-                        <li>IP address or approximate location derived from it</li>
-                        <li>Advertising identifiers where permitted</li>
-                        <li>App interactions and advertisement interactions</li>
-                        <li>Diagnostic or performance information</li>
-                    </ul>
-
-                    <p>
-                        The exact information handled by a third-party provider
-                        is governed by that provider's own privacy policy and
-                        applicable permissions, settings, and consent requirements.
+                        Not every Cell Cave application necessarily
+                        uses the same services or requires the same
+                        device permissions.
                     </p>
 
                 </article>
 
 
-                <article class="policy-card" id="usage">
+                <article class="policy-card" id="third-party">
 
-                    <h2>3. How Information May Be Used</h2>
+                    <h2>
+                        Third-Party Services
+                    </h2>
 
                     <p>
-                        Depending on the app and services being used,
-                        information may be processed for purposes such as:
+                        Some Cell Cave applications may use third-party
+                        services to provide advertising, app functionality,
+                        or other supporting services.
                     </p>
 
-                    <ul>
-                        <li>Providing and maintaining app functionality</li>
-                        <li>Responding to support requests</li>
-                        <li>Improving stability and technical performance</li>
-                        <li>Displaying and measuring advertising</li>
-                        <li>Preventing fraud or invalid advertising activity</li>
-                        <li>Meeting applicable legal or platform requirements</li>
-                    </ul>
+                    <p>
+                        These providers may process information according
+                        to their own privacy policies. The exact providers
+                        used may vary between applications.
+                    </p>
 
                 </article>
 
 
                 <article class="policy-card" id="advertising">
 
-                    <h2>4. Advertising and Monetization</h2>
+                    <h2>
+                        Advertising Services
+                    </h2>
 
                     <p>
-                        Some Cell Cave apps may use third-party advertising
-                        services to display, deliver, measure, and manage ads.
+                        Cell Cave applications may use advertising or
+                        monetization services provided by third parties.
+                        Not all of the providers listed below are
+                        necessarily used in every Cell Cave app.
                     </p>
 
-                    <p>
-                        Depending on the advertising provider, your region,
-                        consent choices, and device settings, these services
-                        may process device identifiers, advertising identifiers,
-                        IP addresses, app activity, ad interactions, and related
-                        technical information.
-                    </p>
 
-                    <p>
-                        Advertising providers may use information according to
-                        their own policies and the choices available through
-                        your device, operating system, consent interface, or
-                        advertising settings.
-                    </p>
-
-                </article>
+                    <div class="provider-list">
 
 
-                <article class="policy-card" id="third-parties">
+                        <div class="provider">
 
-                    <h2>5. Third-Party Services</h2>
+                            <span>
+                                Google
+                            </span>
 
-                    <p>
-                        Cell Cave apps may use one or more of the following
-                        advertising or monetization providers. Not every provider
-                        is necessarily used in every Cell Cave app.
-                    </p>
-
-                    <div class="service-list">
-
-                        <div class="service-item">
-                            <strong>Google AdMob</strong>
                             <a
                                 href="https://policies.google.com/privacy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Google Privacy Policy ↗
+                                Privacy Policy →
                             </a>
+
                         </div>
 
-                        <div class="service-item">
-                            <strong>Meta Audience Network</strong>
+
+                        <div class="provider">
+
+                            <span>
+                                Meta
+                            </span>
+
                             <a
                                 href="https://www.facebook.com/privacy/policy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Meta Privacy Policy ↗
+                                Privacy Policy →
                             </a>
+
                         </div>
 
-                        <div class="service-item">
-                            <strong>Mintegral</strong>
+
+                        <div class="provider">
+
+                            <span>
+                                Mintegral
+                            </span>
+
                             <a
                                 href="https://www.mintegral.com/en/privacy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Mintegral Privacy Policy ↗
+                                Privacy Policy →
                             </a>
+
                         </div>
 
-                        <div class="service-item">
-                            <strong>Pangle</strong>
+
+                        <div class="provider">
+
+                            <span>
+                                Pangle
+                            </span>
+
                             <a
                                 href="https://www.pangleglobal.com/privacy/enduser-en"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Pangle End User Privacy Policy ↗
+                                Privacy Policy →
                             </a>
+
                         </div>
 
-                        <div class="service-item">
-                            <strong>Liftoff</strong>
+
+                        <div class="provider">
+
+                            <span>
+                                Liftoff
+                            </span>
+
                             <a
                                 href="https://liftoff.ai/privacy-policy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Liftoff Privacy Policy ↗
+                                Privacy Policy →
                             </a>
+
                         </div>
+
 
                     </div>
 
                 </article>
 
 
-                <article class="policy-card" id="sharing">
-
-                    <h2>6. Data Sharing</h2>
-
-                    <p>
-                        Information may be processed or shared with third-party
-                        service providers where necessary to provide their
-                        advertising, technical, measurement, fraud-prevention,
-                        or related services.
-                    </p>
-
-                    <p>
-                        Third-party providers handle information according to
-                        their own privacy policies and applicable agreements.
-                        Cell Cave may also disclose information where required
-                        to comply with applicable law, legal process, or a valid
-                        governmental request.
-                    </p>
-
-                </article>
-
-
-                <article class="policy-card" id="retention">
-
-                    <h2>7. Data Retention</h2>
-
-                    <p>
-                        Information sent directly to Cell Cave, such as a support
-                        email, may be retained for as long as reasonably necessary
-                        to respond to the request, maintain appropriate records,
-                        resolve issues, or meet applicable obligations.
-                    </p>
-
-                    <p>
-                        Information processed independently by third-party
-                        services is retained according to the policies and
-                        retention practices of those providers.
-                    </p>
-
-                </article>
-
-
-                <article class="policy-card" id="security">
-
-                    <h2>8. Security</h2>
-
-                    <p>
-                        Cell Cave takes reasonable care when handling information
-                        received directly through support communications and when
-                        selecting services used within its applications.
-                    </p>
-
-                    <p>
-                        However, no method of electronic transmission, processing,
-                        or storage can be guaranteed to be completely secure.
-                    </p>
-
-                </article>
-
-
                 <article class="policy-card" id="children">
 
-                    <h2>9. Children's Privacy</h2>
+                    <h2>
+                        Children's Privacy
+                    </h2>
 
                     <p>
-                        Cell Cave does not knowingly request children to provide
-                        personal information directly to Cell Cave through support
-                        communications.
+                        Privacy requirements may depend on the specific
+                        application, its intended audience, applicable
+                        laws, platform requirements, and third-party
+                        services used by that application.
                     </p>
 
                     <p>
-                        Third-party advertising services may have their own rules,
-                        age requirements, and privacy practices. Their applicable
-                        policies should be reviewed for additional information.
-                    </p>
-
-                </article>
-
-
-                <article class="policy-card" id="external">
-
-                    <h2>10. External Links</h2>
-
-                    <p>
-                        Cell Cave apps and websites may contain links to external
-                        websites or services. Cell Cave does not control the
-                        privacy practices or content of third-party websites.
-                    </p>
-
-                    <p>
-                        We recommend reviewing the privacy policy of any external
-                        service you visit.
+                        Where an individual application requires
+                        additional information regarding children's
+                        privacy, that information may be provided
+                        in its app-specific privacy documentation.
                     </p>
 
                 </article>
@@ -758,46 +890,54 @@
 
                 <article class="policy-card" id="changes">
 
-                    <h2>11. Changes to This Privacy Policy</h2>
+                    <h2>
+                        Changes to This Policy
+                    </h2>
 
                     <p>
-                        This Privacy Policy may be revised when our apps,
-                        third-party services, legal requirements, or privacy
-                        practices change.
+                        This Privacy Policy may be revised when necessary
+                        to reflect changes to Cell Cave applications,
+                        services, third-party providers, or applicable
+                        requirements.
                     </p>
 
                     <p>
-                        When this policy is updated, the date shown at the top
-                        of this page may also be updated.
+                        When this page is revised, the updated date
+                        displayed above may also be changed.
                     </p>
 
                 </article>
 
 
-                <article class="policy-card contact-card" id="contact">
+                <article class="policy-card" id="contact">
 
-                    <h2>12. Contact Cell Cave</h2>
+                    <h2>
+                        Contact Us
+                    </h2>
 
                     <p>
-                        If you have questions about this Privacy Policy or
-                        privacy-related matters concerning a Cell Cave app,
-                        you can contact us by email.
+                        If you have a question regarding this Privacy
+                        Policy or a Cell Cave application, you can
+                        contact us by email.
                     </p>
 
-                    <a
-                        href="mailto:cellcave70@gmail.com"
-                        class="email-link"
-                    >
-                        cellcave70@gmail.com
-                    </a>
+                    <div class="contact-box">
+
+                        <a href="mailto:cellcave70@gmail.com">
+                            cellcave70@gmail.com
+                        </a>
+
+                    </div>
 
                 </article>
+
 
             </div>
 
         </div>
 
     </section>
+
 
 </main>
 
@@ -806,24 +946,163 @@
 
     <div class="container">
 
-        <div class="footer-top">
+        <div class="footer-main">
+
 
             <div class="footer-brand">
-                <h3>Cell Cave</h3>
-                <p>Simple Utilities. Smarter Everyday.</p>
+
+                <h3>
+                    Cell Cave
+                </h3>
+
+                <p>
+                    Simple Utilities. Smarter Everyday.
+                </p>
+
+
+                <div class="footer-social">
+
+                    <span class="social-label">
+                        Follow Cell Cave
+                    </span>
+
+
+                    <div class="social-icons">
+
+
+                        <span
+                            class="social-icon"
+                            title="Facebook"
+                            aria-label="Facebook"
+                        >
+
+                            <svg viewBox="0 0 24 24">
+
+                                <path d="M13.7 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v9h3.7z"/>
+
+                            </svg>
+
+                        </span>
+
+
+                        <span
+                            class="social-icon instagram"
+                            title="Instagram"
+                            aria-label="Instagram"
+                        >
+
+                            <svg viewBox="0 0 24 24">
+
+                                <rect
+                                    x="3.5"
+                                    y="3.5"
+                                    width="17"
+                                    height="17"
+                                    rx="5"
+                                ></rect>
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                ></circle>
+
+                                <circle
+                                    cx="17.5"
+                                    cy="6.5"
+                                    r="0.8"
+                                    fill="currentColor"
+                                    stroke="none"
+                                ></circle>
+
+                            </svg>
+
+                        </span>
+
+
+                        <span
+                            class="social-icon"
+                            title="LinkedIn"
+                            aria-label="LinkedIn"
+                        >
+
+                            <svg viewBox="0 0 24 24">
+
+                                <path d="M5.2 8.2H2.4V21h2.8V8.2zM3.8 2.5A1.7 1.7 0 1 0 3.8 5.9a1.7 1.7 0 0 0 0-3.4zM21.6 13.7c0-3.9-2.1-5.7-4.9-5.7-2.3 0-3.3 1.2-3.8 2.1V8.2h-2.8V21h2.8v-6.4c0-1.7.3-3.4 2.5-3.4 2.1 0 2.1 2 2.1 3.5V21h2.8l.1-7.3z"/>
+
+                            </svg>
+
+                        </span>
+
+
+                        <span
+                            class="social-icon"
+                            title="YouTube"
+                            aria-label="YouTube"
+                        >
+
+                            <svg viewBox="0 0 24 24">
+
+                                <path d="M21.4 7.1c-.2-1.3-1.1-2.2-2.4-2.4C17.3 4.4 14.7 4.3 12 4.3s-5.3.1-7 .4c-1.3.2-2.2 1.1-2.4 2.4-.2 1.4-.3 3.1-.3 4.9s.1 3.5.3 4.9c.2 1.3 1.1 2.2 2.4 2.4 1.7.3 4.3.4 7 .4s5.3-.1 7-.4c1.3-.2 2.2-1.1 2.4-2.4.2-1.4.3-3.1.3-4.9s-.1-3.5-.3-4.9z"/>
+
+                                <path
+                                    d="M10 8.7l6 3.3-6 3.3V8.7z"
+                                    fill="#171916"
+                                />
+
+                            </svg>
+
+                        </span>
+
+
+                        <span
+                            class="social-icon social-x"
+                            title="X"
+                            aria-label="X"
+                        >
+                            X
+                        </span>
+
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="footer-links">
 
-                <a href="../">Home</a>
-                <a href="../apps/">Apps</a>
-                <a href="../support/">Support</a>
-                <a href="../about/">About</a>
+            <nav
+                class="footer-links"
+                aria-label="Footer navigation"
+            >
 
-                <a href="../privacy/">Privacy Policy</a>
-                <a href="../terms/">Terms of Use</a>
+                <a href="../">
+                    Home
+                </a>
 
-                <a href="../app-store/">App Store</a>
+                <a href="../apps/">
+                    Apps
+                </a>
+
+                <a href="../support/">
+                    Support
+                </a>
+
+                <a href="../about/">
+                    About
+                </a>
+
+                <a href="./">
+                    Privacy Policy
+                </a>
+
+                <a href="../terms/">
+                    Terms of Use
+                </a>
+
+                <a href="../app-store/">
+                    App Store
+                </a>
 
                 <a
                     href="https://play.google.com/store/apps/developer?id=Cell+Cave"
@@ -833,17 +1112,22 @@
                     Google Play
                 </a>
 
-            </div>
+            </nav>
+
 
         </div>
 
+
         <div class="footer-bottom">
+
             © 2026 Cell Cave. All rights reserved.
+
         </div>
 
     </div>
 
 </footer>
+
 
 </body>
 </html>
