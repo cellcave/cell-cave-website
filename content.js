@@ -8,7 +8,7 @@ const siteContent = {
     },
 
     hero: {
-        badge: "Utility Apps by Cell Cave",
+        badge: "Mobile Apps by Cell Cave",     
 
         title: "Useful Apps for Everyday Digital Needs",
 
