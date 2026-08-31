@@ -144,7 +144,8 @@ const siteContent = {
     },
 
     footer: {
-        copyright: "© 2026 Cell Cave. All rights reserved."
-    }
+    copyright: "© 2026 Cell Cave. All rights reserved.",
+    email: "cellcave70@gmail.com"
+}
 
 };
