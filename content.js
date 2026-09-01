@@ -32,6 +32,7 @@ const siteContent = {
             {
                 name: "Status Downloader: Video Saver",
                 shortName: "SS",
+                icon: "assets/icons/status-downloader-video-saver.webp",
 
                 description:
                     "A practical mobile app for saving and managing supported status content.",
@@ -45,6 +46,7 @@ const siteContent = {
             {
                 name: "Document Reader: Read All PDF",
                 shortName: "DR",
+                icon: "assets/icons/document-reader-read-all-pdf.webp",
 
                 description:
                     "A practical document reader designed to help users open and read supported document formats.",
@@ -58,6 +60,7 @@ const siteContent = {
             {
                 name: "Age Calculator: Date of Birth",
                 shortName: "AC",
+                icon: "assets/icons/age-calculator-date-of-birth.webp",
 
                 description:
                     "Calculate age and useful date information through a simple and convenient mobile experience.",
@@ -71,6 +74,7 @@ const siteContent = {
             {
                 name: "All Video Downloader & Saver",
                 shortName: "VD",
+                icon: "assets/icons/all-video-downloader-saver.webp",
 
                 description:
                     "A mobile utility designed to help manage and download videos from supported sources.",
@@ -84,6 +88,7 @@ const siteContent = {
             {
                 name: "Cloud Backup: Photo Storage",
                 shortName: "CB",
+                icon: "assets/icons/cloud-backup-photo-storage.webp",
 
                 description:
                     "A practical mobile app focused on cloud backup and photo storage needs.",
