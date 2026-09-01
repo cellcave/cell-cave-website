@@ -75,7 +75,7 @@ const siteContent = {
                 description:
                     "A mobile utility designed to help manage and download videos from supported sources.",
 
-                link: "apps/all-video-downloader/",
+                link: "apps/all-video-downloader-saver/",
 
                 googlePlayLink:
                     "https://play.google.com/store/apps/details?id=com.video.downloader.instagram.videosaver"
