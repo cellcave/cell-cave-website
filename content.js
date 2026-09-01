@@ -88,7 +88,7 @@ const siteContent = {
                 description:
                     "A practical mobile app focused on cloud backup and photo storage needs.",
 
-                link: "apps/cloud-backup/",
+                link: "apps/cloud-backup-photo-storage/",
 
                 googlePlayLink:
                     "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault"
