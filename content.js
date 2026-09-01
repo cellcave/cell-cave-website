@@ -62,7 +62,7 @@ const siteContent = {
                 description:
                     "Calculate age and useful date information through a simple and convenient mobile experience.",
 
-                link: "apps/age-calculator/",
+                link: "apps/age-calculator-date-of-birth/",
 
                 googlePlayLink:
                     "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
