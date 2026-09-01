@@ -69,7 +69,7 @@
         }
 
         .container {
-            width: min(1160px, 90%);
+            width: min(1420px, 90%);
             margin: auto;
         }
 
@@ -80,10 +80,10 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(246, 247, 244, 0.88);
+            background: rgba(246, 247, 244, 0.92);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(227, 230, 223, 0.8);
+            border-bottom: 1px solid var(--line);
         }
 
         .nav-inner {
@@ -135,12 +135,13 @@
         /* HERO */
 
         .privacy-hero {
-            padding: 90px 0 60px;
+            padding: 72px 0 72px;
+            border-bottom: 1px solid var(--line);
         }
 
         .back-link {
             display: inline-flex;
-            margin-bottom: 32px;
+            margin-bottom: 28px;
             color: var(--accent);
             font-size: 14px;
             font-weight: 700;
@@ -152,97 +153,149 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .privacy-hero h1 {
-            max-width: 900px;
+            max-width: 1000px;
             font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(42px, 6vw, 68px);
-            line-height: 1.05;
-            letter-spacing: -2px;
+            font-size: clamp(44px, 6vw, 70px);
+            line-height: 1.04;
+            letter-spacing: -2.5px;
             margin-bottom: 22px;
         }
 
         .privacy-hero p {
-            max-width: 780px;
+            max-width: 980px;
             color: var(--muted);
             font-size: 17px;
-            line-height: 1.8;
+            line-height: 1.9;
         }
 
         .updated {
             display: inline-block;
-            margin-top: 24px;
-            padding: 9px 14px;
+            margin-top: 27px;
+            padding: 13px 16px;
             background: var(--soft);
-            border-radius: 10px;
+            border-radius: 12px;
             color: var(--accent-dark);
             font-size: 13px;
             font-weight: 700;
         }
 
 
-        /* POLICY */
+        /* POLICY LAYOUT */
 
-        .privacy-section {
-            padding: 0 0 110px;
+        .policy-section {
+            padding: 74px 0 110px;
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 290px minmax(0, 1fr);
+            gap: 42px;
+            align-items: start;
+        }
+
+
+        /* CONTENTS SIDEBAR */
+
+        .contents-card {
+            position: sticky;
+            top: 105px;
+            padding: 32px 30px;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 22px;
+        }
+
+        .contents-card h2 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contents-list {
+            list-style: none;
+        }
+
+        .contents-list li {
+            margin-bottom: 13px;
+        }
+
+        .contents-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .contents-list a {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.45;
+            transition: 0.2s ease;
+        }
+
+        .contents-list a:hover {
+            color: var(--accent);
+        }
+
+
+        /* POLICY CARDS */
+
+        .policy-content {
+            display: grid;
+            gap: 20px;
         }
 
         .policy-card {
-            max-width: 900px;
             padding: 42px;
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: 24px;
+            scroll-margin-top: 105px;
         }
 
-        .policy-block {
-            padding: 30px 0;
-            border-bottom: 1px solid var(--line);
-        }
-
-        .policy-block:first-child {
-            padding-top: 0;
-        }
-
-        .policy-block:last-child {
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-
-        .policy-block h2 {
+        .policy-card h2 {
             font-family: "Space Grotesk", sans-serif;
-            font-size: 24px;
-            line-height: 1.3;
-            margin-bottom: 13px;
+            font-size: 28px;
+            line-height: 1.25;
+            margin-bottom: 25px;
         }
 
-        .policy-block p {
+        .policy-card h3 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 18px;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        .policy-card p {
             color: var(--muted);
-            margin-bottom: 13px;
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 16px;
         }
 
-        .policy-block p:last-child {
+        .policy-card p:last-child {
             margin-bottom: 0;
         }
 
-        .policy-block ul {
+        .policy-card ul {
             padding-left: 22px;
-            margin-top: 12px;
+            margin: 14px 0 18px;
             color: var(--muted);
         }
 
-        .policy-block li {
+        .policy-card li {
             margin-bottom: 8px;
+            line-height: 1.7;
         }
 
-        .policy-block a {
+        .policy-card a {
             color: var(--accent);
             font-weight: 600;
         }
 
-        .policy-block a:hover {
+        .policy-card a:hover {
             text-decoration: underline;
         }
 
@@ -250,7 +303,7 @@
             margin-top: 18px;
             padding: 20px;
             background: var(--soft);
-            border-radius: 16px;
+            border-radius: 15px;
         }
 
         .contact-box strong {
@@ -281,7 +334,7 @@
             margin-bottom: 8px;
         }
 
-        .footer-brand > p {
+        .footer-brand p {
             max-width: 360px;
             color: #aeb3ac;
             font-size: 14px;
@@ -314,7 +367,25 @@
 
         /* RESPONSIVE */
 
-        @media (max-width: 900px) {
+        @media (max-width: 950px) {
+
+            .policy-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contents-card {
+                position: static;
+            }
+
+            .contents-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px 20px;
+            }
+
+            .contents-list li {
+                margin-bottom: 0;
+            }
 
             .footer-main {
                 grid-template-columns: 1fr;
@@ -325,7 +396,6 @@
                 justify-self: start;
                 width: 100%;
             }
-
         }
 
         @media (max-width: 650px) {
@@ -344,17 +414,32 @@
             }
 
             .privacy-hero {
-                padding: 65px 0 45px;
+                padding: 58px 0;
+            }
+
+            .policy-section {
+                padding-top: 45px;
             }
 
             .policy-card {
+                padding: 27px;
+            }
+
+            .policy-card h2 {
+                font-size: 23px;
+            }
+
+            .contents-card {
                 padding: 26px;
+            }
+
+            .contents-list {
+                grid-template-columns: 1fr;
             }
 
             .footer-links {
                 grid-template-columns: repeat(2, 1fr);
             }
-
         }
 
         @media (max-width: 420px) {
@@ -362,7 +447,6 @@
             .footer-links {
                 grid-template-columns: 1fr;
             }
-
         }
 
     </style>
@@ -372,6 +456,8 @@
 
 <body>
 
+
+<!-- HEADER -->
 
 <header class="navbar">
 
@@ -421,6 +507,8 @@
 <main>
 
 
+    <!-- HERO -->
+
     <section class="privacy-hero">
 
         <div class="container">
@@ -442,7 +530,10 @@
 
             <p>
                 This Privacy Policy explains how Cell Cave handles
-                information when you use Status Downloader: Video Saver.
+                information when you use Status Downloader: Video Saver,
+                including media and storage access, analytics,
+                advertising, subscriptions, payments, and third-party
+                services.
             </p>
 
             <span class="updated">
@@ -454,16 +545,131 @@
     </section>
 
 
-    <section class="privacy-section">
+    <!-- POLICY -->
 
-        <div class="container">
+    <section class="policy-section">
 
-            <div class="policy-card">
+        <div class="container policy-layout">
 
 
-                <div class="policy-block">
+            <!-- CONTENTS -->
 
-                    <h2>1. Overview</h2>
+            <aside class="contents-card">
+
+                <h2>
+                    Contents
+                </h2>
+
+                <ul class="contents-list">
+
+                    <li>
+                        <a href="#overview">
+                            1. Overview
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#information">
+                            2. Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#media">
+                            3. Media & Storage
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#technical">
+                            4. Technical Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#analytics">
+                            5. Analytics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#advertising">
+                            6. Advertising
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#subscription">
+                            7. Subscription
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#third-parties">
+                            8. Third Parties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sharing">
+                            9. Data Sharing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#retention">
+                            10. Data Retention
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#choices">
+                            11. Your Choices
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#children">
+                            12. Children
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#security">
+                            13. Security
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#changes">
+                            14. Changes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            15. Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </aside>
+
+
+            <!-- RIGHT SIDE CARDS -->
+
+            <div class="policy-content">
+
+
+                <article
+                    class="policy-card"
+                    id="overview"
+                >
+
+                    <h2>
+                        1. Overview
+                    </h2>
 
                     <p>
                         Status Downloader: Video Saver is provided by
@@ -476,10 +682,13 @@
                         account or sign in to use its main features.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="information"
+                >
 
                     <h2>
                         2. Information We Do Not Directly Collect
@@ -487,15 +696,18 @@
 
                     <p>
                         Cell Cave does not directly ask users to provide
-                        their name, email address, phone number, or precise
-                        location to use the main functionality of Status
-                        Downloader: Video Saver.
+                        their name, email address, phone number, or
+                        precise location to use the main functionality
+                        of Status Downloader: Video Saver.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="media"
+                >
 
                     <h2>
                         3. Photos, Videos, Media and Storage
@@ -509,8 +721,9 @@
                     </p>
 
                     <p>
-                        Supported status content and media handled through
-                        the app are processed locally on the user's device.
+                        Supported status content and media handled
+                        through the app are processed locally on the
+                        user's device.
                     </p>
 
                     <p>
@@ -520,10 +733,13 @@
                         functionality.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="technical"
+                >
 
                     <h2>
                         4. Device and Technical Information
@@ -550,10 +766,13 @@
                         </li>
                     </ul>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="analytics"
+                >
 
                     <h2>
                         5. Firebase Analytics
@@ -570,10 +789,13 @@
                         users and paid subscribers.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="advertising"
+                >
 
                     <h2>
                         6. Advertising
@@ -607,10 +829,13 @@
                         law.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="subscription"
+                >
 
                     <h2>
                         7. Paid Subscription and Payments
@@ -623,7 +848,8 @@
 
                     <p>
                         Free users may receive advertising. Paid
-                        subscribers do not receive advertising in the app.
+                        subscribers do not receive advertising in the
+                        app.
                     </p>
 
                     <p>
@@ -632,10 +858,13 @@
                         or process the user's full payment card details.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="third-parties"
+                >
 
                     <h2>
                         8. Third-Party Services
@@ -706,10 +935,13 @@
 
                     </ul>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="sharing"
+                >
 
                     <h2>
                         9. Data Sharing
@@ -727,10 +959,13 @@
                         own privacy policies.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="retention"
+                >
 
                     <h2>
                         10. Data Retention
@@ -749,10 +984,13 @@
                         policies.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="choices"
+                >
 
                     <h2>
                         11. Your Choices
@@ -772,10 +1010,13 @@
                         services.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="children"
+                >
 
                     <h2>
                         12. Children's Privacy
@@ -786,10 +1027,13 @@
                         directed to children under the age of 13.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="security"
+                >
 
                     <h2>
                         13. Security
@@ -803,19 +1047,22 @@
                         secure.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="changes"
+                >
 
                     <h2>
                         14. Changes to This Privacy Policy
                     </h2>
 
                     <p>
-                        Cell Cave may update this Privacy Policy when
-                        app functionality, services, third-party
-                        providers, or legal requirements change.
+                        Cell Cave may update this Privacy Policy when app
+                        functionality, services, third-party providers,
+                        or legal requirements change.
                     </p>
 
                     <p>
@@ -823,10 +1070,13 @@
                         last-updated date may be revised when appropriate.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="policy-block">
+                <article
+                    class="policy-card"
+                    id="contact"
+                >
 
                     <h2>
                         15. Contact Us
@@ -839,7 +1089,9 @@
 
                     <div class="contact-box">
 
-                        <strong>Email:</strong>
+                        <strong>
+                            Email:
+                        </strong>
 
                         <a href="mailto:cellcave70@gmail.com">
                             cellcave70@gmail.com
@@ -847,7 +1099,7 @@
 
                     </div>
 
-                </div>
+                </article>
 
 
             </div>
@@ -859,6 +1111,8 @@
 
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
