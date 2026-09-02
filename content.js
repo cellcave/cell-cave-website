@@ -105,6 +105,42 @@ const siteContent = {
       
 },
 
+    whyCellCave: {
+    title: "Why Cell Cave?",
+
+    description:
+        "We aim to keep our apps useful without making them unnecessarily complicated.",
+
+    points: [
+
+        {
+            title: "Simple",
+            description:
+                "Straightforward experiences that are easy to understand."
+        },
+
+        {
+            title: "Practical",
+            description:
+                "Apps focused on real everyday utility and common digital needs."
+        },
+
+        {
+            title: "User Focused",
+            description:
+                "Clean interfaces designed around a smooth user experience."
+        },
+
+        {
+            title: "Always Improving",
+            description:
+                "We continue refining our apps based on usability and product needs."
+        }
+
+    ]
+
+},
+    
     featuredApp: {
         label: "Featured App",
 
