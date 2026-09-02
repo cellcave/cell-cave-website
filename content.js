@@ -99,7 +99,7 @@ const siteContent = {
 
     googlePlayLink:
         "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
-}
+
         }
 
     ]
