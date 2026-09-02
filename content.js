@@ -22,113 +22,88 @@ const siteContent = {
             "Cell Cave focuses on practical mobile applications designed to make everyday digital tasks simpler, more convenient, and easier to manage."
     },
 
-   apps: [
+  apps: {
 
-    {
-        name: "Cloud Backup: Photo Storage",
-        shortName: "CB",
-        icon: "assets/icons/cloud-backup-photo-storage.png",
+    title: "Our Apps",
 
-        description:
-            "A practical mobile app focused on cloud backup and photo storage needs.",
+    description:
+        "Explore a growing collection of practical mobile utilities.",
 
-        link: "apps/cloud-backup-photo-storage/",
+    items: [
 
-        googlePlayLink:
-            "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault"
-    },
+        {
+            name: "Cloud Backup: Photo Storage",
+            shortName: "CB",
+            icon: "assets/icons/cloud-backup-photo-storage.png",
 
-    {
-        name: "Document Reader: Read All PDF",
-        shortName: "DR",
-        icon: "assets/icons/document-reader-read-all-pdf.png",
+            description:
+                "A practical mobile app focused on cloud backup and photo storage needs.",
 
-        description:
-            "A practical document reader designed to help users open and read supported document formats.",
+            link: "apps/cloud-backup-photo-storage/",
 
-        link: "apps/document-reader-read-all-pdf/",
+            googlePlayLink:
+                "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault"
+        },
 
-        googlePlayLink:
-            "https://play.google.com/store/apps/details?id=com.officedocument.word.docx.document.viewer.pdf"
-    },
+        {
+            name: "Document Reader: Read All PDF",
+            shortName: "DR",
+            icon: "assets/icons/document-reader-read-all-pdf.png",
 
-    {
-        name: "Status Downloader: Video Saver",
-        shortName: "SS",
-        icon: "assets/icons/status-downloader-video-saver.png",
+            description:
+                "A practical document reader designed to help users open and read supported document formats.",
 
-        description:
-            "A practical mobile app for saving and managing supported status content.",
+            link: "apps/document-reader-read-all-pdf/",
 
-        link: "/cell-cave-website/apps/status-downloader-video-saver/",
+            googlePlayLink:
+                "https://play.google.com/store/apps/details?id=com.officedocument.word.docx.document.viewer.pdf"
+        },
 
-        googlePlayLink:
-            "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
-    },
+        {
+            name: "Status Downloader: Video Saver",
+            shortName: "SS",
+            icon: "assets/icons/status-downloader-video-saver.png",
 
-    {
-        name: "All Video Downloader & Saver",
-        shortName: "VD",
-        icon: "assets/icons/all-video-downloader-saver.png",
+            description:
+                "A practical mobile app for saving and managing supported status content.",
 
-        description:
-            "A mobile utility designed to help manage and download videos from supported sources.",
+            link: "/cell-cave-website/apps/status-downloader-video-saver/",
 
-        link: "apps/all-video-downloader-saver/",
+            googlePlayLink:
+                "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
+        },
 
-        googlePlayLink:
-            "https://play.google.com/store/apps/details?id=com.video.downloader.instagram.videosaver"
-    },
+        {
+            name: "All Video Downloader & Saver",
+            shortName: "VD",
+            icon: "assets/icons/all-video-downloader-saver.png",
 
-    {
-        name: "Age Calculator: Date of Birth",
-        shortName: "AC",
-        icon: "assets/icons/age-calculator-date-of-birth.webp",
+            description:
+                "A mobile utility designed to help manage and download videos from supported sources.",
 
-        description:
-            "Calculate age and useful date information through a simple and convenient mobile experience.",
+            link: "apps/all-video-downloader-saver/",
 
-        link: "apps/age-calculator-date-of-birth/",
+            googlePlayLink:
+                "https://play.google.com/store/apps/details?id=com.video.downloader.instagram.videosaver"
+        },
 
-        googlePlayLink:
-            "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
-    }
+        {
+            name: "Age Calculator: Date of Birth",
+            shortName: "AC",
+            icon: "assets/icons/age-calculator-date-of-birth.webp",
 
-],
-    whyCellCave: {
-        title: "Why Cell Cave?",
+            description:
+                "Calculate age and useful date information through a simple and convenient mobile experience.",
 
-        description:
-            "We aim to keep our apps useful without making them unnecessarily complicated.",
+            link: "apps/age-calculator-date-of-birth/",
 
-        points: [
+            googlePlayLink:
+                "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
+        }
 
-            {
-                title: "Simple",
-                description:
-                    "Straightforward experiences that are easy to understand."
-            },
+    ]
 
-            {
-                title: "Practical",
-                description:
-                    "Apps focused on real everyday utility and common digital needs."
-            },
-
-            {
-                title: "User Focused",
-                description:
-                    "Clean interfaces designed around a smooth user experience."
-            },
-
-            {
-                title: "Always Improving",
-                description:
-                    "We continue refining our apps based on usability and product needs."
-            }
-
-        ]
-    },
+},
 
     featuredApp: {
         label: "Featured App",
