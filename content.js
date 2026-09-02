@@ -87,18 +87,19 @@ const siteContent = {
                 "https://play.google.com/store/apps/details?id=com.video.downloader.instagram.videosaver"
         },
 
-        {
-            name: "Age Calculator: Date of Birth",
-            shortName: "AC",
-            icon: "assets/icons/age-calculator-date-of-birth.webp",
+      {
+    name: "Age Calculator: Date of Birth",
+    shortName: "AC",
+    icon: "assets/icons/age-calculator-date-of-birth.webp",
 
-            description:
-                "Calculate age and useful date information through a simple and convenient mobile experience.",
+    description:
+        "Calculate age and useful date information through a simple and convenient mobile experience.",
 
-            link: "apps/age-calculator-date-of-birth/",
+    link: "apps/age-calculator-date-of-birth/",
 
-            googlePlayLink:
-                "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
+    googlePlayLink:
+        "https://play.google.com/store/apps/details?id=com.dobcalc.birthdaycalculator.dob"
+}
         }
 
     ]
