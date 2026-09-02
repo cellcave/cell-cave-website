@@ -142,20 +142,21 @@ const siteContent = {
 
 },
     
-    featuredApp: {
-        label: "Featured App",
+featuredApp: {
+    label: "Featured App",
 
-        title: "Status Downloader: Video Saver",
+    title: "Cloud Backup: Photo Storage",
 
-        description:
-            "Status Downloader: Video Saver provides a practical way to save and manage supported status content.",
+    description:
+        "Cloud Backup: Photo Storage provides a practical way to back up and manage your important photos and files.",
 
-        button: "View App",
+    button: "View App",
 
-        link: "/cell-cave-website/apps/status-downloader-video-saver/",
+    link: "apps/cloud-backup-photo-storage/",
 
-        googlePlayLink:
-            "https://play.google.com/store/apps/details?id=com.statussaver.videosaver.downloadstatus.storysaver"
+    googlePlayLink:
+        "https://play.google.com/store/apps/details?id=com.softwarealliance.cloudvault"
+    
     },
 
     support: {
