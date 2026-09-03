@@ -124,6 +124,7 @@
             color: var(--muted);
             font-size: 14px;
             font-weight: 600;
+            transition: 0.2s ease;
         }
 
         .nav-links a:hover {
@@ -184,7 +185,7 @@
         }
 
 
-        /* POLICY LAYOUT */
+        /* POLICY */
 
         .policy-section {
             padding: 74px 0 110px;
@@ -198,7 +199,7 @@
         }
 
 
-        /* CONTENTS */
+        /* TABLE OF CONTENTS */
 
         .contents-card {
             position: sticky;
@@ -229,6 +230,7 @@
             color: var(--muted);
             font-size: 13px;
             line-height: 1.45;
+            transition: 0.2s ease;
         }
 
         .contents-list a:hover {
@@ -275,15 +277,16 @@
             margin-bottom: 0;
         }
 
-        .policy-card ul {
-            padding-left: 22px;
+        .policy-card ul,
+        .policy-card ol {
+            padding-left: 23px;
             margin: 14px 0 18px;
             color: var(--muted);
         }
 
         .policy-card li {
             margin-bottom: 8px;
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         .policy-card a {
@@ -296,7 +299,7 @@
         }
 
 
-        /* TABLE */
+        /* PROVIDER TABLE */
 
         .table-wrap {
             width: 100%;
@@ -336,16 +339,30 @@
         }
 
 
-        /* CONTACT */
+        /* CONTACT BOX */
 
         .contact-box {
-            margin-top: 18px;
+            margin: 18px 0;
             padding: 20px;
             background: var(--soft);
             border-radius: 15px;
         }
 
         .contact-box strong {
+            color: var(--text);
+        }
+
+
+        /* WARNING / NOTE */
+
+        .important-note {
+            margin: 18px 0;
+            padding: 20px;
+            background: var(--soft);
+            border-radius: 15px;
+        }
+
+        .important-note strong {
             color: var(--text);
         }
 
@@ -511,6 +528,7 @@
             <span>Cell Cave</span>
         </a>
 
+
         <ul class="nav-links">
 
             <li>
@@ -570,10 +588,10 @@
 
             <p>
                 Cell Cave ("we", "us", or "our") operates
-                Cloud Backup: Photo Storage (the "App").
-                This Privacy Policy explains what information the App
-                may access, collect, use, store, and share, why it is
-                used, and the choices available to users.
+                Cloud Backup: Photo Storage (the "App"). This Privacy
+                Policy explains what information the App may access,
+                collect, use, store, and share, why it is used, how long
+                it may be retained, and the choices available to users.
             </p>
 
             <p>
@@ -607,24 +625,113 @@
 
                 <ul class="contents-list">
 
-                    <li><a href="#information">1. Information We Handle</a></li>
-                    <li><a href="#backup">2. Backup Content</a></li>
-                    <li><a href="#permissions">3. Device Permissions</a></li>
-                    <li><a href="#assistant">4. In-App Assistant</a></li>
-                    <li><a href="#analytics">5. Analytics & Diagnostics</a></li>
-                    <li><a href="#advertising">6. Advertising</a></li>
-                    <li><a href="#billing">7. Paid Plans & Billing</a></li>
-                    <li><a href="#providers">8. Service Providers</a></li>
-                    <li><a href="#use">9. How We Use Information</a></li>
-                    <li><a href="#sharing">10. Sharing & Disclosure</a></li>
-                    <li><a href="#retention">11. Storage & Retention</a></li>
-                    <li><a href="#deletion">12. Account & Data Deletion</a></li>
-                    <li><a href="#choices">13. Your Privacy Choices</a></li>
-                    <li><a href="#security">14. Security</a></li>
-                    <li><a href="#international">15. International Processing</a></li>
-                    <li><a href="#children">16. Children's Privacy</a></li>
-                    <li><a href="#changes">17. Changes</a></li>
-                    <li><a href="#contact">18. Contact Us</a></li>
+                    <li>
+                        <a href="#information">
+                            1. Information We Handle
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#backup">
+                            2. Backup Content
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#permissions">
+                            3. Device Permissions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#assistant">
+                            4. In-App Assistant
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#analytics">
+                            5. Analytics & Diagnostics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#advertising">
+                            6. Advertising
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#billing">
+                            7. Paid Plans & Billing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#providers">
+                            8. Service Providers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#use">
+                            9. How We Use Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sharing">
+                            10. Sharing & Disclosure
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#retention">
+                            11. Storage & Retention
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#deletion">
+                            12. Account & Data Deletion
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#choices">
+                            13. Your Privacy Choices
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#security">
+                            14. Security
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#international">
+                            15. International Processing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#children">
+                            16. Children's Privacy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#changes">
+                            17. Changes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            18. Contact Us
+                        </a>
+                    </li>
 
                 </ul>
 
@@ -636,7 +743,7 @@
             <div class="policy-content">
 
 
-                <!-- 1 -->
+                <!-- SECTION 1 -->
 
                 <article class="policy-card" id="information">
 
@@ -649,6 +756,7 @@
                         Cloud Backup: Photo Storage may handle the
                         following categories of information.
                     </p>
+
 
                     <h3>
                         Account and Authentication Information
@@ -690,10 +798,41 @@
                         Amazon Web Services (AWS) infrastructure.
                     </p>
 
+
+                    <h3>
+                        Technical and Device Information
+                    </h3>
+
+                    <p>
+                        Depending on the features and third-party services
+                        used, the App and its service providers may process
+                        technical information such as:
+                    </p>
+
+                    <ul>
+                        <li>Device model</li>
+                        <li>Operating system and version</li>
+                        <li>App version</li>
+                        <li>Device and app identifiers</li>
+                        <li>Advertising identifiers</li>
+                        <li>Language and general device settings</li>
+                        <li>IP address</li>
+                        <li>Network information</li>
+                        <li>Crash and diagnostic information</li>
+                        <li>Performance information</li>
+                        <li>App usage and interaction information</li>
+                    </ul>
+
+                    <p>
+                        This information may be used to operate, secure,
+                        troubleshoot, analyze, monetize, and improve the
+                        App and its services.
+                    </p>
+
                 </article>
 
 
-                <!-- 2 -->
+                <!-- SECTION 2 -->
 
                 <article class="policy-card" id="backup">
 
@@ -702,8 +841,8 @@
                     </h2>
 
                     <p>
-                        The App allows users to back up supported
-                        content to cloud storage.
+                        The App allows users to back up supported content
+                        to cloud storage.
                     </p>
 
                     <p>
@@ -715,6 +854,7 @@
                         <li>Photos</li>
                         <li>Videos</li>
                         <li>Documents and files</li>
+                        <li>Audio files</li>
                         <li>Contacts</li>
                     </ul>
 
@@ -724,9 +864,10 @@
                     </p>
 
                     <p>
-                        Encrypted backup data is stored using
-                        Amazon Web Services (AWS) cloud infrastructure.
+                        Encrypted backup data is stored using Amazon Web
+                        Services (AWS) cloud infrastructure.
                     </p>
+
 
                     <h3>
                         Access to Backup Contents
@@ -757,7 +898,7 @@
                 </article>
 
 
-                <!-- 3 -->
+                <!-- SECTION 3 -->
 
                 <article class="policy-card" id="permissions">
 
@@ -771,6 +912,7 @@
                         to use.
                     </p>
 
+
                     <h3>
                         Photos, Videos and Media
                     </h3>
@@ -782,8 +924,8 @@
                     </p>
 
                     <p>
-                        Where supported by Android, users may be able
-                        to choose:
+                        Where supported by Android, users may be able to
+                        choose:
                     </p>
 
                     <ul>
@@ -797,6 +939,7 @@
                         user through Android's permission controls.
                     </p>
 
+
                     <h3>
                         Contacts
                     </h3>
@@ -807,19 +950,10 @@
                     </p>
 
                     <p>
-                        Contacts access is used only to provide the
-                        supported contact backup and restore functionality.
+                        Contacts access is used to provide the supported
+                        contact backup and restore functionality.
                     </p>
 
-                    <p>
-                        Users can manage or revoke applicable permissions
-                        through Android device settings.
-                    </p>
-
-                    <p>
-                        If a required permission is denied, the related
-                        feature may not be available.
-                    </p>
 
                     <h3>
                         Other Permissions
@@ -834,10 +968,20 @@
                         use them for the related functionality.
                     </p>
 
+                    <p>
+                        Users can manage or revoke applicable permissions
+                        through Android device settings.
+                    </p>
+
+                    <p>
+                        If a required permission is denied, the related
+                        feature may not be available.
+                    </p>
+
                 </article>
 
 
-                <!-- 4 -->
+                <!-- SECTION 4 -->
 
                 <article class="policy-card" id="assistant">
 
@@ -868,6 +1012,7 @@
                         for ordinary backup and restore functionality.
                     </p>
 
+
                     <h3>
                         Please Do Not Enter Sensitive Information
                     </h3>
@@ -896,7 +1041,7 @@
                 </article>
 
 
-                <!-- 5 -->
+                <!-- SECTION 5 -->
 
                 <article class="policy-card" id="analytics">
 
@@ -941,14 +1086,14 @@
                     </ul>
 
                     <p>
-                        Google services process information according
-                        to their applicable privacy practices.
+                        Google services process information according to
+                        their applicable privacy practices.
                     </p>
 
                 </article>
 
 
-                <!-- 6 -->
+                <!-- SECTION 6 -->
 
                 <article class="policy-card" id="advertising">
 
@@ -990,7 +1135,7 @@
                         <li>IP address</li>
                         <li>Network information</li>
                         <li>App and advertising interaction information</li>
-                        <li>Approximate or coarse location information where permitted</li>
+                        <li>Approximate location or other coarse location information where permitted</li>
                         <li>Diagnostic or technical information</li>
                         <li>Information necessary to prevent fraud and invalid advertising activity</li>
                         <li>Other information permitted or required by applicable advertising and privacy rules</li>
@@ -998,11 +1143,12 @@
 
                     <p>
                         Advertising providers may use this information
-                        to serve, measure, personalize, optimize, or
+                        to serve, measure, personalize, optimize, and
                         otherwise support advertisements, subject to
                         applicable consent requirements, privacy settings,
                         and their respective policies.
                     </p>
+
 
                     <h3>
                         AdMob Mediation
@@ -1025,7 +1171,9 @@
                     <p>
                         Cell Cave does not control the independent privacy
                         practices of these third-party advertising
-                        providers.
+                        providers. Their processing may be governed by
+                        their respective privacy policies and applicable
+                        terms.
                     </p>
 
                     <p>
@@ -1036,23 +1184,16 @@
                     </p>
 
                     <p>
-                        For users in regions where consent is required,
-                        Cell Cave intends to configure applicable AdMob
-                        privacy and consent mechanisms to support the
-                        required choices.
-                    </p>
-
-                    <p>
                         Advertising availability and personalization may
-                        depend on the user's plan, location, consent
-                        choices, device settings, applicable laws, and
-                        current App configuration.
+                        depend on the user's location, consent choices,
+                        device settings, applicable laws, and current
+                        App configuration.
                     </p>
 
                 </article>
 
 
-                <!-- 7 -->
+                <!-- SECTION 7 -->
 
                 <article class="policy-card" id="billing">
 
@@ -1061,7 +1202,8 @@
                     </h2>
 
                     <p>
-                        The App may offer paid plans or subscriptions.
+                        The App may offer paid plans, subscriptions, or
+                        in-app purchases.
                     </p>
 
                     <p>
@@ -1090,7 +1232,7 @@
                 </article>
 
 
-                <!-- 8 -->
+                <!-- SECTION 8 -->
 
                 <article class="policy-card" id="providers">
 
@@ -1101,7 +1243,7 @@
                     <p>
                         We use third-party service providers and
                         technology partners to operate, maintain,
-                        analyze, monetize, and improve the App.
+                        analyze, monetize, secure, and improve the App.
                     </p>
 
                     <p>
@@ -1109,15 +1251,18 @@
                         behalf or may provide services directly to users.
                     </p>
 
+
                     <div class="table-wrap">
 
                         <table class="provider-table">
 
                             <thead>
+
                                 <tr>
                                     <th>Provider</th>
                                     <th>Purpose</th>
                                 </tr>
+
                             </thead>
 
                             <tbody>
@@ -1134,9 +1279,9 @@
                                 <tr>
                                     <td>Google Play services / Firebase</td>
                                     <td>
-                                        Analytics, crash reporting, diagnostics,
-                                        performance monitoring, and related app
-                                        services
+                                        Analytics, crash reporting,
+                                        diagnostics, performance monitoring,
+                                        and related app services
                                     </td>
                                 </tr>
 
@@ -1152,32 +1297,32 @@
                                 <tr>
                                     <td>Meta Audience Network</td>
                                     <td>
-                                        Third-party advertising demand through
-                                        AdMob Mediation
+                                        Third-party advertising demand
+                                        through AdMob Mediation
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>Mintegral</td>
                                     <td>
-                                        Third-party advertising demand through
-                                        AdMob Mediation
+                                        Third-party advertising demand
+                                        through AdMob Mediation
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>Pangle</td>
                                     <td>
-                                        Third-party advertising demand through
-                                        AdMob Mediation
+                                        Third-party advertising demand
+                                        through AdMob Mediation
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>Liftoff Monetize</td>
                                     <td>
-                                        Third-party advertising demand through
-                                        AdMob Mediation
+                                        Third-party advertising demand
+                                        through AdMob Mediation
                                     </td>
                                 </tr>
 
@@ -1203,79 +1348,90 @@
                     <ul>
 
                         <li>
-                            AWS Privacy Notice:
+                            <strong>AWS Privacy Notice:</strong>
                             <a
                                 href="https://aws.amazon.com/privacy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                AWS Privacy Notice
+                                https://aws.amazon.com/privacy/
                             </a>
                         </li>
 
                         <li>
-                            Firebase Privacy and Security:
+                            <strong>Firebase Privacy and Security:</strong>
                             <a
                                 href="https://firebase.google.com/support/privacy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Firebase Privacy
+                                https://firebase.google.com/support/privacy/
                             </a>
                         </li>
 
                         <li>
-                            Google Privacy Policy:
+                            <strong>Google Privacy Policy:</strong>
                             <a
                                 href="https://policies.google.com/privacy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Google Privacy Policy
+                                https://policies.google.com/privacy
                             </a>
                         </li>
 
                         <li>
-                            Meta Privacy Policy:
+                            <strong>Google AdMob Privacy Information:</strong>
+                            <a
+                                href="https://support.google.com/admob/answer/6128543"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                https://support.google.com/admob/answer/6128543
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>Meta Privacy Policy:</strong>
                             <a
                                 href="https://www.facebook.com/privacy/policy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Meta Privacy Policy
+                                https://www.facebook.com/privacy/policy/
                             </a>
                         </li>
 
                         <li>
-                            Mintegral Privacy Policy:
+                            <strong>Mintegral Privacy Policy:</strong>
                             <a
                                 href="https://www.mintegral.com/en/privacy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Mintegral Privacy Policy
+                                https://www.mintegral.com/en/privacy/
                             </a>
                         </li>
 
                         <li>
-                            Pangle Privacy Policy:
+                            <strong>Pangle Privacy Policy:</strong>
                             <a
                                 href="https://www.pangleglobal.com/privacy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Pangle Privacy Policy
+                                https://www.pangleglobal.com/privacy/
                             </a>
                         </li>
 
                         <li>
-                            Liftoff Privacy Policy:
+                            <strong>Liftoff Privacy Policy:</strong>
                             <a
                                 href="https://liftoff.io/privacy-policy/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Liftoff Privacy Policy
+                                https://liftoff.io/privacy-policy/
                             </a>
                         </li>
 
@@ -1290,14 +1446,17 @@
 
                     <p>
                         The specific third-party advertising providers
-                        used by the App may change over time depending on
-                        the active AdMob mediation configuration.
+                        used by the App may change over time depending
+                        on the active AdMob mediation configuration.
+                        If the advertising providers used by the App
+                        materially change, this Privacy Policy may be
+                        updated accordingly.
                     </p>
 
                 </article>
 
 
-                <!-- 9 -->
+                <!-- SECTION 9 -->
 
                 <article class="policy-card" id="use">
 
@@ -1336,7 +1495,7 @@
                 </article>
 
 
-                <!-- 10 -->
+                <!-- SECTION 10 -->
 
                 <article class="policy-card" id="sharing">
 
@@ -1366,9 +1525,9 @@
 
                     <p>
                         Third-party advertising providers may receive or
-                        collect certain information directly through their
-                        advertising technologies when their services are
-                        used through the App.
+                        collect certain information directly through
+                        their advertising technologies when their services
+                        are used through the App.
                     </p>
 
                     <p>
@@ -1377,26 +1536,47 @@
                     </p>
 
                     <ul>
-                        <li>Comply with applicable law, regulation, legal process, or lawful government request</li>
-                        <li>Protect the rights, safety, security, or property of users, Cell Cave, or others</li>
-                        <li>Detect or prevent fraud, abuse, security incidents, or other unlawful activity</li>
-                        <li>Enforce applicable terms or protect the operation of the App</li>
+                        <li>
+                            Comply with applicable law, regulation,
+                            legal process, or lawful government request
+                        </li>
+
+                        <li>
+                            Protect the rights, safety, security, or
+                            property of users, Cell Cave, or others
+                        </li>
+
+                        <li>
+                            Detect or prevent fraud, abuse, security
+                            incidents, or other unlawful activity
+                        </li>
+
+                        <li>
+                            Enforce applicable terms or protect the
+                            operation of the App
+                        </li>
                     </ul>
 
                     <p>
-                        We do not sell personal or sensitive user data.
+                        Cell Cave does not sell personal data for monetary
+                        consideration. Advertising partners may nevertheless
+                        process or receive certain information as described
+                        in the Advertising section of this Privacy Policy,
+                        subject to applicable laws, consent requirements,
+                        privacy settings, and their respective policies.
                     </p>
 
                 </article>
 
 
-                <!-- 11 -->
+                <!-- SECTION 11 -->
 
                 <article class="policy-card" id="retention">
 
                     <h2>
                         11. Data Storage and Retention
                     </h2>
+
 
                     <h3>
                         Encrypted Backup Data
@@ -1419,6 +1599,7 @@
                         normal cloud-storage process.
                     </p>
 
+
                     <h3>
                         Account Information
                     </h3>
@@ -1431,6 +1612,7 @@
                         provide account, security, backup, and related
                         services.
                     </p>
+
 
                     <h3>
                         Analytics, Advertising, Billing and Diagnostics
@@ -1450,6 +1632,36 @@
                         policies.
                     </p>
 
+
+                    <h3>
+                        Account Deletion and Backup Data
+                    </h3>
+
+                    <p>
+                        We keep your backed-up content and account data
+                        for as long as your account is active.
+                    </p>
+
+                    <p>
+                        When your account is deleted, your account and
+                        associated backup data are deleted as described
+                        in Section 12, <strong>Account and Data Deletion</strong>.
+                    </p>
+
+                    <p>
+                        We do not keep your files as active user-accessible
+                        backup data after account deletion.
+                    </p>
+
+                    <p>
+                        Short-lived copies may remain in our infrastructure
+                        providers' backups for a limited period before
+                        they are fully purged, where technically necessary
+                        for backup, security, disaster recovery, fraud
+                        prevention, or other legitimate operational purposes.
+                    </p>
+
+
                     <h3>
                         Support Communications
                     </h3>
@@ -1466,7 +1678,7 @@
                 </article>
 
 
-                <!-- 12 -->
+                <!-- SECTION 12 -->
 
                 <article class="policy-card" id="deletion">
 
@@ -1475,56 +1687,170 @@
                     </h2>
 
                     <p>
-                        Users may request deletion of their
-                        Cloud Backup: Photo Storage account and
-                        associated user data.
+                        You can delete your Cloud Backup account and the
+                        data linked to it at any time.
+                    </p>
+
+
+                    <h3>
+                        Delete from Inside the App
+                    </h3>
+
+                    <p>
+                        Account deletion can be initiated from within
+                        the App:
+                    </p>
+
+                    <ol>
+                        <li>
+                            Open <strong>Cloud Backup</strong> and make
+                            sure you are signed in.
+                        </li>
+
+                        <li>
+                            Go to the <strong>Settings</strong> tab.
+                        </li>
+
+                        <li>
+                            Tap <strong>Delete account</strong>
+                            ("Erase your data").
+                        </li>
+
+                        <li>
+                            Read the confirmation message, then tap
+                            <strong>Delete account</strong> to confirm.
+                        </li>
+                    </ol>
+
+                    <p>
+                        The App completes the deletion process. It removes
+                        your files from cloud storage, deletes your account,
+                        and clears your encryption keys from the device.
+                    </p>
+
+
+                    <h3>
+                        Request Deletion by Email
+                    </h3>
+
+                    <p>
+                        If you cannot access the App, for example because
+                        you changed phones or uninstalled the App, you
+                        can request account deletion by email.
                     </p>
 
                     <p>
-                        Where the App provides an in-app account deletion
-                        option, users should use the account deletion
-                        option available in the App.
-                    </p>
-
-                    <p>
-                        Users may also request account and associated
-                        data deletion by contacting:
-                    </p>
-
-                    <div class="contact-box">
-
-                        <strong>Email:</strong>
-
+                        Send an email to
                         <a href="mailto:cellcave70@gmail.com">
-                            cellcave70@gmail.com
+                            <strong>cellcave70@gmail.com</strong>
                         </a>
+                        from the email address associated with your
+                        account, using the subject
+                        <strong>"Delete my account"</strong>.
+                    </p>
+
+                    <p>
+                        We will verify that the request comes from the
+                        account owner and then process the deletion request.
+                    </p>
+
+                    <p>
+                        We aim to complete verified deletion requests
+                        within <strong>30 days</strong>.
+                    </p>
+
+
+                    <h3>
+                        What Gets Deleted
+                    </h3>
+
+                    <p>
+                        When your account is deleted, the following
+                        information is removed:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Your account and login information. You will
+                            no longer be able to sign in.
+                        </li>
+
+                        <li>
+                            All files you backed up, including photos,
+                            videos, documents, and audio files stored in
+                            the cloud.
+                        </li>
+
+                        <li>
+                            Your contacts backup, if you used the contacts
+                            backup feature.
+                        </li>
+
+                        <li>
+                            Your encryption keys stored on the device,
+                            which may make any remaining local copy of
+                            encrypted data unrecoverable.
+                        </li>
+
+                        <li>
+                            Your stored account settings and entitlements.
+                        </li>
+                    </ul>
+
+                    <div class="important-note">
+
+                        <strong>
+                            Account deletion cannot be undone.
+                        </strong>
+
+                        <p>
+                            Once your account is deleted, your backups
+                            are permanently removed from active cloud
+                            storage and cannot be restored through the App.
+                            If there is anything you want to keep, restore
+                            or export it from the App before deleting your
+                            account.
+                        </p>
 
                     </div>
 
+
+                    <h3>
+                        What We May Keep
+                    </h3>
+
                     <p>
-                        When an account deletion request is completed,
-                        associated user data will be deleted from
-                        Cell Cave's systems and applicable service
-                        providers where required and technically
-                        applicable.
+                        We do not keep your files as active user-accessible
+                        backup data after account deletion.
                     </p>
 
                     <p>
-                        Certain information may be retained when necessary
-                        for legitimate purposes such as security, fraud
-                        prevention, dispute resolution, legal compliance,
-                        or other obligations.
+                        We may retain a minimal amount of information
+                        where required by law, such as records of a
+                        purchase for tax or legal purposes.
                     </p>
 
                     <p>
-                        Deletion of an account may also affect access to
-                        encrypted backup data associated with that account.
+                        Short-lived copies of information may also remain
+                        in infrastructure-provider backups for a limited
+                        period before they are fully purged, where
+                        technically necessary for backup, security,
+                        disaster recovery, fraud prevention, or other
+                        legitimate operational purposes.
+                    </p>
+
+                    <p>
+                        Any information retained under these limited
+                        exceptions will be restricted to what is reasonably
+                        necessary for the applicable purpose and will be
+                        deleted or anonymized when it is no longer required,
+                        where technically and legally applicable.
                     </p>
 
                 </article>
 
 
-                <!-- 13 -->
+                <!-- SECTION 13 -->
 
                 <article class="policy-card" id="choices">
 
@@ -1538,16 +1864,53 @@
                     </p>
 
                     <ul>
-                        <li>Grant, deny, or revoke applicable Android permissions</li>
-                        <li>Choose which supported content to back up</li>
-                        <li>Choose Full, Limited, or No media access where Android provides those choices</li>
-                        <li>Choose whether to back up contacts</li>
-                        <li>Choose whether to use the optional assistant</li>
-                        <li>Manage applicable advertising consent and privacy settings</li>
-                        <li>Make choices regarding personalized or non-personalized advertising where such controls are available</li>
-                        <li>Manage subscriptions and purchases through Google Play</li>
-                        <li>Request access, correction, deletion, or other applicable privacy rights</li>
-                        <li>Contact Cell Cave regarding privacy or account-related questions</li>
+                        <li>
+                            Grant, deny, or revoke applicable Android
+                            permissions
+                        </li>
+
+                        <li>
+                            Choose which supported content to back up
+                        </li>
+
+                        <li>
+                            Choose Full, Limited, or No media access where
+                            Android provides those choices
+                        </li>
+
+                        <li>
+                            Choose whether to back up contacts
+                        </li>
+
+                        <li>
+                            Choose whether to use the optional assistant
+                        </li>
+
+                        <li>
+                            Manage applicable advertising consent and
+                            privacy settings
+                        </li>
+
+                        <li>
+                            Make choices regarding personalized or
+                            non-personalized advertising where such
+                            controls are available
+                        </li>
+
+                        <li>
+                            Manage subscriptions and purchases through
+                            Google Play
+                        </li>
+
+                        <li>
+                            Request access, correction, deletion, or
+                            other applicable privacy rights
+                        </li>
+
+                        <li>
+                            Contact Cell Cave regarding privacy or
+                            account-related questions
+                        </li>
                     </ul>
 
                     <p>
@@ -1558,7 +1921,7 @@
                 </article>
 
 
-                <!-- 14 -->
+                <!-- SECTION 14 -->
 
                 <article class="policy-card" id="security">
 
@@ -1585,8 +1948,7 @@
 
                     <p>
                         Users are responsible for protecting their email
-                        account, device, OTP codes, and account
-                        credentials.
+                        account, device, OTP codes, and account credentials.
                     </p>
 
                     <p>
@@ -1599,7 +1961,7 @@
                 </article>
 
 
-                <!-- 15 -->
+                <!-- SECTION 15 -->
 
                 <article class="policy-card" id="international">
 
@@ -1646,7 +2008,7 @@
                 </article>
 
 
-                <!-- 16 -->
+                <!-- SECTION 16 -->
 
                 <article class="policy-card" id="children">
 
@@ -1680,8 +2042,8 @@
 
                         <strong>Email:</strong>
 
-                        <a href="mailto:cellcave70@gmail.com">
-                            cellcave70@gmail.com
+                        <a href="mailto:support@cloud-vault.tech">
+                            support@cloud-vault.tech
                         </a>
 
                     </div>
@@ -1694,7 +2056,7 @@
                 </article>
 
 
-                <!-- 17 -->
+                <!-- SECTION 17 -->
 
                 <article class="policy-card" id="changes">
 
@@ -1729,7 +2091,7 @@
                 </article>
 
 
-                <!-- 18 -->
+                <!-- SECTION 18 -->
 
                 <article class="policy-card" id="contact">
 
@@ -1746,7 +2108,9 @@
 
                     <div class="contact-box">
 
-                        <strong>Cell Cave</strong>
+                        <strong>
+                            Cell Cave
+                        </strong>
 
                         <br>
 
